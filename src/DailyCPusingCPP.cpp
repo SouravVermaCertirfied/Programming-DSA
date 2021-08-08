@@ -10,6 +10,9 @@
 using namespace std;
 
 int main() {
+	int var1 = 10;
 	cout << "YOY" << endl; // prints YOY
+	var1=+1;
+	var1=+1;
 	return 0;
 }
