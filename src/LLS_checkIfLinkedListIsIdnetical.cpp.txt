@@ -1,0 +1,28 @@
+//Function to check if 2 linked lists are identical
+bool areIdentical(struct Node *head1, struct Node *head2)
+{
+	//code here
+	if(head1 != NULL && head2 !=NULL ){
+	    struct Node * loc1 = head1;
+	    struct Node * loc2 = head2;
+	    
+	    while(loc1!=NULL && loc2 !=NULL){
+	        if(loc1->data ==  loc2->data){
+	            loc1 = loc1->next;
+	            loc2 = loc2->next;
+	        }
+	        else{
+	            return false;
+	        }
+	    }
+	    if(loc1  == NULL && loc2 == NULL){
+	        return true;
+	    }
+	    else{
+	        return false;
+	    }
+	}
+	else{
+	    return false;
+	}
+}

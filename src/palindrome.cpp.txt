@@ -1,0 +1,25 @@
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+bool ifPalindrome(string mystring){
+	bool ans = true;
+	int i = 0;
+	int j = mystring.length()-1;
+	while(i<j){
+		if(mystring[i]!=mystring[j]){
+			ans = false;
+			break;
+		}
+		i++;
+		j--;
+	}
+	return ans;
+}
+
+int main(){
+	string mystring = "GFG";
+	cout<<ifPalindrome(mystring);
+	return 0;
+}

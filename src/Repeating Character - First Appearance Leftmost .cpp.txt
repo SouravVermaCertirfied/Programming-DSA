@@ -1,0 +1,21 @@
+class Solution
+{
+    public:
+    //Function to find repeated character whose first appearance is leftmost.
+    int repeatedCharacter (string s) 
+    { 
+        //Your code here
+        int loc = -1;
+        bool found = false;
+        for(int i=s.length()-1; i>= 0; i--){
+            for(int j=s.length()-1; j>=0; j--){
+                   if(i!=j){
+                       if(s[i]==s[j]){
+                          loc = i;
+                       }
+                   }
+            }
+        }
+        return loc;
+    }
+};
