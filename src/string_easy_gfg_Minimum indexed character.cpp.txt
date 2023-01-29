@@ -1,0 +1,56 @@
+// { Driver Code Starts
+//Initial template for C++
+
+#include <bits/stdc++.h>
+using namespace std;
+
+
+ // } Driver Code Ends
+//User function template for C++
+
+class Solution
+{
+  public:
+    //Function to find the minimum indexed character.
+    int minIndexChar(string str, string patt)
+    {
+        // Your code here
+        int arrstr[128] = {0};
+        int arrpatt[128] = {0};
+        for(unsigned int i=0;i<str.length();i++){
+            arrstr[(int)str[i]] +=1;
+        }
+        for(unsigned int i=0;i<patt.length();i++){
+            arrpatt[(int)patt[i]] +=1;
+        }
+        for(unsigned int i=0;i<str.length();i++){
+        	int strp = arrstr[(int)str[i]];
+        	int pattp = arrpatt[(int)str[i]];
+            if(( strp>0) && (pattp>0)){
+                return i;
+            }
+        }
+        return -1;
+        
+        
+    }
+};
+
+// { Driver Code Starts.
+
+int main()
+{
+	int t;
+    cin>>t;
+    while(t--)
+    {
+        string str;
+        string patt;
+        cin>>str;
+        cin>>patt;
+        Solution obj;
+        cout<<obj.minIndexChar(str, patt)<<endl;
+    }
+	return 0;
+}
+  // } Driver Code Ends
