@@ -28,6 +28,6 @@ int findUnique(vector<int> arr){
 int main()
 {
 	vector<int> arr{1,2,3,1,2,3,4};
-	cout<<findUnique(arr);
+	cout<<"The output is:"<<findUnique(arr);
 	return 0;
 }
