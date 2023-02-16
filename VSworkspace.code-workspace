@@ -3,5 +3,11 @@
         {
             "path": "VSCode"
         }
-    ]
+    ],
+    "settings": {
+        "files.associations": {
+            "*.ejs": "html",
+            "iostream": "cpp"
+        }
+    }
 }
