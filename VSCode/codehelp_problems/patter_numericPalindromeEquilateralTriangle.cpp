@@ -13,6 +13,6 @@ print the pattern:
 */
 
 int main(){
-
+    
     return 0;
 }
