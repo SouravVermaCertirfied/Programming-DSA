@@ -4,8 +4,9 @@ using namespace std;
 
 void sortColor(vector<int> &nums);
 void printVector(vector<int> nums);
-void bubbleSort(vector<int> &nums);
-void countingMethod(vector<int> &nums);
+void bubbleSortApproch(vector<int> &nums);
+void countingMethodApproch(vector<int> &nums);
+void threePointerApproch(vector<int> &nums);
 
 
 
@@ -20,6 +21,10 @@ int main(){
 
 void sortColor(vector<int> &nums){
     countingMethod(nums);
+    
+}
+
+void threePointerApproch(vector<int> &nums){
     
 }
 

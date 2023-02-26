@@ -17,12 +17,10 @@ int main(){
 
 void insertionSort(vector<int> &input){
     int pass = 0;
-    for(int i=0;i<input.size()-1;i++){
+    for(int i=1;i<input.size()-1;i++){
         pass++;
         for(int j=i+1;j<input.size();j++){
-            if(input[i]>input[j]) {
-                swap(input[i],input[j]);
-            }
+            
         }
         cout<<"Pass : "<<pass<<" the array is --> ";
         printVector(input);
