@@ -22,7 +22,7 @@ bool isPalindromeRecursion(char input[], int size){
 }
 
 int main(){
-    char input[] = "mada1m";
+    char input[] = "racecar";
     int size =  strlen(input);
     cout<<isPalindromeRecursion(input, size);
     return 0;

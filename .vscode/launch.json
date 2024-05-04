@@ -1,21 +1,17 @@
 {
-    // Use IntelliSense to learn about possible attributes.
-    // Hover to view descriptions of existing attributes.
-    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "(gdb) Bash on Windows Attach",
+            "name": "C/C++ Runner: Debug Session",
             "type": "cppdbg",
-            "request": "attach",
-            "program": "enter program name, for example ${workspaceFolder}/a.exe",
-            "processId": "${command:pickRemoteProcess}",
-            "pipeTransport": {
-                "debuggerPath": "/usr/bin/gdb",
-                "pipeProgram": "${env:windir}\\system32\\bash.exe",
-                "pipeArgs": ["-c"],
-                "pipeCwd": ""
-            },
+            "request": "launch",
+            "args": [],
+            "stopAtEntry": false,
+            "externalConsole": true,
+            "cwd": "d:/Github/Programming-DSA/VSCode/Basics_Using_C",
+            "program": "d:/Github/Programming-DSA/VSCode/Basics_Using_C/build/Debug/outDebug",
+            "MIMode": "gdb",
+            "miDebuggerPath": "C:/MinGW/bin/gdb.exe",
             "setupCommands": [
                 {
                     "description": "Enable pretty-printing for gdb",
@@ -25,7 +21,7 @@
             ]
         },
         {
-            "name": "g++.exe - Build and debug active file",
+            "name": "C/C++: g++.exe build and debug active file",
             "type": "cppdbg",
             "request": "launch",
             "program": "${fileDirname}\\${fileBasenameNoExtension}.exe",
@@ -40,6 +36,11 @@
                 {
                     "description": "Enable pretty-printing for gdb",
                     "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "Set Disassembly Flavor to Intel",
+                    "text": "-gdb-set disassembly-flavor intel",
                     "ignoreFailures": true
                 }
             ],
