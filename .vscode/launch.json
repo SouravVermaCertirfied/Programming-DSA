@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "d:/Github/Programming-DSA/Basics_Using_C",
-      "program": "d:/Github/Programming-DSA/Basics_Using_C/build/Debug/outDebug",
+      "cwd": "d:/Github/Programming-DSA/codehelp_problems",
+      "program": "d:/Github/Programming-DSA/codehelp_problems/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
