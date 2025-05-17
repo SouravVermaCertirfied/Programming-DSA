@@ -1,0 +1,34 @@
+Qualcomm Cheat Sheet
+
+DSA
+  Topics:
+Arrays 
+Bit Manipulation
+Linkedlist
+		
+ C, C++
+	Pointers,
+	Structures
+	Memory Allocation 
+	File manipulation
+	
+
+Computer Networks
+	DNS, IPV6, IPV4, TCP/IP, NS/NA, RS/RA, Routers functions,
+	How Internet works
+
+Operating Systems
+	Thrashing, semaphore, race conditions, scheduling algorithms,
+	Multithreading and multiprogramming, 
+	Peterson's algorithm..
+
+Pointers
+	Pointer arithmetic
+	Types of pointers
+
+Various output questions etc.
+
+I hope this will help you…
+
+Do subscribe to channel if you found this helpful
+

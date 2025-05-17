@@ -1,0 +1,179 @@
+DSA
+
+Basics
+- Input output of string
+- Passing arrays to a functions
+- Passing function to functions
+- Pointers
+    - Pointer arithmetic
+    - Pointers to store the function and variable
+    - Pointers to use structures and classes
+    - De-reference opertators
+    - 
+
+DSA
+- Bit Manipulation
+    - Left and right shift of signed and unsigned integers
+    - chars
+    - 
+
+Topics:
+Arrays 
+Bit Manipulation
+Linkedlist
+C, C++
+Pointers,
+Structures
+ 
+File manipulation
+
+Operating Systems
+Thrashing
+Semaphore
+Race conditions
+Scheduling algorithms
+Multithreading 
+Multiprogramming, 
+Peterson's algorithm
+
+Pointers
+Pointer arithmetic
+Types of pointers
+
+
+-------------------------C-----------------------------------------
+const 
+volatile
+wap to implement custom_memcopy from src to dest
+memory management of c program
+malloc callo realloc free
+
+1. Advanced Memory Management
+Memory Pooling: Implementing custom memory pools to manage memory more efficiently in high-performance applications.
+
+Memory Fragmentation: Understanding and mitigating fragmentation in long-running programs.
+
+Allocator Design: Creating custom memory allocators (e.g., object pools, slab allocators).
+
+Garbage Collection (in C-like environments): Techniques for managing memory without an automatic garbage collector.
+
+Caching Mechanisms: Implementing cache strategies (like LRU caches) to optimize memory access patterns.
+
+Alignment and Padding: Understanding data alignment and how it affects memory access and performance.
+
+
+. Concurrency and Multithreading
+Thread Safety: Techniques to ensure thread safety, like mutexes, semaphores, and atomic operations.
+
+Race Conditions & Deadlock: Recognizing and avoiding them in multithreaded applications.
+
+Thread Pools: Managing a pool of threads to reduce overhead and increase efficiency.
+
+Condition Variables: Handling threads waiting for a specific condition to be met.
+
+Lock-Free Data Structures: Implementing non-blocking data structures (e.g., lock-free queues, stacks) for real-time systems.
+
+Task Parallelism & Work Stealing: Techniques for distributing work between threads efficiently.
+
+Thread Synchronization Mechanisms: Use of pthread, mutexes, semaphores, and spinlocks in shared memory systems.
+
+Event-driven Programming & I/O Multiplexing: Select, poll, epoll (Linux), and non-blocking I/O.
+
+CPU Affinity: Optimizing thread performance using CPU core binding.
+
+4. Performance Optimization & Profiling
+Code Profiling Tools: gprof, perf, valgrind, Intel VTune – how to use these tools for identifying bottlenecks in CPU, memory, and I/O.
+
+Cache Optimization: Minimizing cache misses, working with cache lines, understanding the memory hierarchy.
+
+Branch Prediction & Pipelining: Writing code that exploits branch prediction and avoids pipeline stalls.
+
+Loop Unrolling / Loop Fusion: Optimizing loops to enhance parallelism and reduce overhead.
+
+Instruction-Level Parallelism: Ensuring that your code efficiently utilizes CPU pipelines.
+
+Algorithm Complexity vs. Real-World Performance: Not just Big-O, but practical performance under real-world conditions (e.g., CPU cache behavior, network latency).
+
+Lazy Evaluation & Delayed Execution: When and how to defer computation to reduce overhead.
+
+Compiler Optimizations: GCC flags (e.g., -O2, -O3), inlining, link-time optimizations, loop optimizations, vectorization.
+
+Memory Alignment and Access Patterns: Writing code that takes advantage of data locality.
+
+5. Networking & Low-Level Systems Programming
+TCP/UDP Sockets: Deep understanding of socket programming, non-blocking sockets, multiplexed I/O (select, poll, epoll).
+
+Network Protocols: How HTTP, TCP, UDP, and DNS work at the packet level. Understand IP routing, NAT, TCP handshake.
+
+DNS, HTTP/HTTPS: Implementing DNS resolution and understanding the inner workings of HTTP(S) (header parsing, chunking, keep-alive).
+
+Concurrency in Network Programming: Managing a large number of client connections concurrently.
+
+Packet Parsing and Construction: Working with raw sockets, packet sniffing, and custom protocol design.
+
+Security: Buffer overflow exploits, preventing integer overflows, race conditions, encryption techniques (e.g., TLS/SSL).
+
+Syscalls for Networking: Using select(), poll(), epoll() for efficient network I/O operations.
+
+Network Optimization: Understanding flow control, congestion control, and optimizing protocols for low-latency systems.
+
+6. Embedded Systems and Hardware Interaction
+Interfacing with Hardware: Direct manipulation of registers, interfacing with sensors, actuators.
+
+Embedded System Constraints: Handling limited memory and CPU resources efficiently.
+
+RTOS (Real-Time Operating Systems): Concepts like deterministic task execution, interrupt handling, real-time scheduling algorithms.
+
+Interrupts and ISR (Interrupt Service Routines): Handling hardware interrupts, prioritizing tasks in embedded systems.
+
+Memory-Mapped I/O: Directly interfacing with hardware via memory-mapped registers.
+
+Bootloaders and Firmware Development: Writing low-level firmware to boot an embedded device.
+
+Power Consumption: Techniques for optimizing power usage in embedded devices (e.g., low-power idle modes).
+
+7. System Design & Scalability
+Designing Large-Scale Distributed Systems: Understanding of CAP theorem, event-driven architectures, microservices, load balancing.
+
+Concurrency in Distributed Systems: Implementing consistency models like CAP, Paxos, Raft.
+
+Fault Tolerance & Recovery: Ensuring reliability with retries, dead-letter queues, and replication.
+
+Network Protocols for Large Systems: Custom protocols to handle communication between components efficiently.
+
+Database Design & Integration: SQL/NoSQL systems, designing high-performance databases, caching layers (e.g., Redis, Memcached).
+
+Design Patterns for Distributed Systems: CQRS, event sourcing, circuit breaker, and back-pressure patterns.
+
+8. Compiler Design & Code Generation
+Compiler Theory: Parsing techniques, lexical analysis, and syntax trees.
+
+Custom Compilers for Embedded Systems: Writing compilers or code generation tools for specific hardware platforms.
+
+LLVM: Understanding how to use and extend LLVM for specific needs (like custom optimizations for C code).
+
+Static Analysis and Optimization: Tools for static code analysis (e.g., Clang, Coverity).
+
+9. Tools and Environment
+Makefiles & Build Systems: Creating efficient Makefiles and understanding CMake, Autotools, and other build systems.
+
+Version Control Systems: Mastery of Git, working with feature branches, CI/CD pipelines.
+
+Debugging at Scale: Advanced gdb techniques, core dump analysis, tracing with strace, ltrace.
+
+CI/CD for C Code: Implementing continuous integration for C-based projects, including unit testing and coverage.
+
+10. Problem-Solving Skills (Interview Practice)
+Complex Algorithm Design: Be prepared for challenging algorithmic problems related to advanced trees, graphs, dynamic programming, and recursion.
+
+Concurrency Problems: Writing thread-safe code that is efficient in real-world conditions (e.g., large datasets, multithreaded environments).
+
+Optimizing Legacy Code: Understanding and improving existing codebases, reducing bugs, and increasing performance in large systems.
+
+Given your experience level, this outline focuses on applying deep C knowledge to real-world, high-performance, and large-scale systems. Practice with complex system design problems, multi-threading challenges, and low-level systems programming. Let me know if you'd like detailed resources or examples on any specific topic!
+
+
+
+
+
+

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>C++ Notes for Professionals</title>
+
+  <!-- Fira Code Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet" />
+
+  <!-- Prism.js Theme (VS Code-like style) -->
+  <link href="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/themes/prism-okaidia.min.css" rel="stylesheet" />
+
+  <!-- Prism.js Core -->
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/prism.min.js"></script>
+  <!-- Prism.js Language Component for C++ -->
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-cpp.min.js"></script>
+
+  <style>
+    /* General Layout and Styling */
+    body {
+      font-family: 'Fira Code', Consolas, 'Courier New', monospace;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f9;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    /* Page container */
+    .container {
+      width: 80%;
+      margin: 0 auto;
+      padding: 2rem;
+    }
+
+    h1, h2 {
+      color: #2c3e50;
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h3 {
+      color: #34495e;
+      margin-top: 2rem;
+    }
+
+    p {
+      font-size: 1.2rem;
+      margin-bottom: 1.5rem;
+    }
+
+    /* Code Block Styling */
+    pre {
+      background-color: #2d2d2d;
+      border-radius: 8px;
+      padding: 1.5em;
+      margin: 2rem 0;
+      overflow-x: auto;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+
+    code {
+      font-size: 1.1rem;
+      font-family: 'Fira Code', Consolas, monospace;
+    }
+
+    /* Table of contents */
+    .toc {
+      font-size: 1.1rem;
+      margin: 2rem 0;
+      background-color: #fff;
+      border-radius: 8px;
+      padding: 1.5em;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .toc h3 {
+      font-size: 1.5rem;
+      color: #2980b9;
+    }
+
+    .toc ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
+
+    .toc ul li {
+      margin-bottom: 0.5rem;
+    }
+
+    .toc ul li a {
+      text-decoration: none;
+      color: #2980b9;
+    }
+
+    .toc ul li a:hover {
+      text-decoration: underline;
+    }
+
+    /* Add some spacing around the main content */
+    .content {
+      margin-top: 3rem;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <h1>C++ Notes for Professionals</h1>
+      <p>A quick reference guide for professional C++ programmers</p>
+    </header>
+
+    <div class="toc">
+      <h3>Table of Contents</h3>
+      <ul>
+        <li><a href="#section-1">Introduction to C++</a></li>
+        <li><a href="#section-2">Basic Syntax</a></li>
+        <li><a href="#section-3">Advanced Topics</a></li>
+      </ul>
+    </div>
+
+    <div class="content">
+      <section id="section-1">
+        <h2>Introduction to C++</h2>
+        <p>C++ is a powerful general-purpose programming language. It is widely used for systems software, game development, and performance-critical applications.</p>
+      </section>
+
+      <section id="section-2">
+        <h2>Basic Syntax</h2>
+        <p>The basic syntax of C++ includes declarations, operators, loops, and more. Here is a simple C++ program example:</p>
+
+        <pre><code class="language-cpp">
+// Simple C++ Program
+#include &lt;iostream&gt;
+using namespace std;
+
+int main() {
+    cout << "Hello, world!" << endl;
+    return 0;
+}
+        </code></pre>
+      </section>
+
+      <section id="section-3">
+        <h2>Advanced Topics</h2>
+        <p>C++ offers advanced features such as templates, pointers, and the Standard Template Library (STL). These are key for mastering the language.</p>
+
+        <pre><code class="language-cpp">
+// C++ Template Function
+template<typename T>
+T add(T a, T b) {
+    return a + b;
+}
+
+int main() {
+    cout << add(5, 3) << endl; // Output: 8
+}
+        </code></pre>
+      </section>
+    </div>
+  </div>
+</body>
+</html>
