@@ -3,6 +3,24 @@
 - They tell more info about how a variable can be **accessed** and **modified**.
 - 4 types - `const` , `volatile` , `restrict` and `_Atomic`
 
+> IMPORTANT
+
+`const int` and `int const` are the SAME!  
+Hence, the value.
+
+## 🧠 **KEY IDEA**:
+
+**In C, the const keyword applies to whatever is directly to its left — unless there’s nothing to the left, in which case it applies to what’s on the right.**
+
+Hence, `const int const * ptr;` will give a syntax error, as both the const try to make the int leading to redduncy.
+
+```c
+   error: duplicate 'const'
+      |     const int const *ptr;
+      |               ^~~~~
+      |               -----
+```
+
 ## 1. `const`
 1. How const affects pointer declarations differently ?  
 

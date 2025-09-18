@@ -30,20 +30,21 @@ int my_strcmp(const char *str1, const char *str2) {
 this can lead to buffer overflow. User should check will implementation.</span>
 ```c
 //syntax
-char *strcmp(char *dest, const char *source);
+char *strcpy(char *dest, const char *source);
 
 // WAP: Implement your own strcpy - interview question
 
-char *my_strcpy(char *dest, const char *source){
-    char *ptr = dest;
-    while(*source != '\0'){
-        *ptr = *src;
-        src++;
+char *my_strcpy(char *dest, const char *source) {
+    char *ptr = dest; // Save the original destination address
+    while (*source != '\0') {
+        *ptr = *source;
+        source++;
         ptr++;
     }
-    *ptr = '\0'; // ending the destination string with null
-    return dest; // return the address of 1st byte of destination string
+    *ptr = '\0'; // Null-terminate the destination string
+    return dest; // Return the beginning of the destination
 }
+
 ```
 
 

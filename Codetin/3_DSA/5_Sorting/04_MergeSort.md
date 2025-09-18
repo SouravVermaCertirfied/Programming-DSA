@@ -9,7 +9,7 @@
 <hr>
 
 ```cpp
-
+void merge(a)
 
 ```
 
@@ -18,17 +18,6 @@
 
 ```cpp
 #include<iostream>
-
-void merge(vector<int> arr){
-
-    sortme(arr,)
-
-}
-
-
-
-
-
 // Utility function to print array
 void printArray(int arr[], int size) {
     for (int i = 0; i < size; i++) 
@@ -36,7 +25,7 @@ void printArray(int arr[], int size) {
     printf("\n");
 }
 ```
-```c
+```cpp
 // Main function
 int main(){
     vector<int> arr = {5, 3, 2, 9, 4, 1};

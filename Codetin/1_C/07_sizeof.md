@@ -35,7 +35,7 @@ int main(){
     int size = sizeof(arr); // output is 4*10 = 40 bytes - size of array
 }
 ```
-## 4 sizeof with pointers (local and passed scope)
+## 4. sizeof with pointers (local and passed scope)
 ```c
 int foo(int *var){
     sizeof(var); // same as pointer 32-bit or 64-bit as per the system
