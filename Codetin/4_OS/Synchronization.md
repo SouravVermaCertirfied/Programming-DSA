@@ -33,16 +33,41 @@ void *producer(void *args){
     while(1){
         int item = rand() % 100; // Produce 0-99 range random number
         pthread_mutex_lock(&mutex); // lock mutex before entering critical section
-        if( (( in +1 )% BUFFER_SIZE ) != out ){
-            buffer[in] = item;
+        if( (( in +1 )% BUFFER_SIZE ) != out ){ // checks buffer is not full
+            buffer[in] = item; 
             printf("Produced : %d", item);
             in = (in + 1) % BUFFER_SIZE;
         }
+        pthread_mutex_unlock(&mutex); // unlock mutex
+    }
+
+void *consumer(void *args){
+    while(1){
+        pthread_mutex_lock(&mutex); // lock mutex before entering critical section
+        if( in != out ){ // ensure that buffer is not empty
+        int item = buffer[out];
+        printf("Consumed : %d", item);
+        out = (out + 1 ) % BUFFER_SIZE;
+        }
         pthread_mutex_unlock(&mutex);
-
-
     }
 }
+```
+
+## Better Approach - Using `mutex` and conditions `full` and `empty`
+
+```c
+#include<pthread.h>
+
+#define BUFFER_SIZE 5
+
+pthread_mutex_t mutex;
+
+pthread_cond_t full;
+pthread_cond_t empty;
+
+
+
 ```
     
     
