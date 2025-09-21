@@ -31,42 +31,43 @@ struct Node{
 - only, when the tree is empty the root is updated, it is updated from a NULL to valid node address.
 
 ```c
-Node* insertBST(Node* root, int key){
-    if(root==NULL){
-        root = new Node(key);
-        return root;
+/*iterative solution */
+Node* insertBST(Node* root, int key) {
+    if (root == NULL) {
+        return new Node(key);
     }
-    Node *ptr = NULL = root;
-    Node *prev = NULL;
-    while(ptr!=NULL){
-        if(key == ptr->key)
-            return root;
-        else if(key < ptr->key){
-            prev = ptr;
+
+    Node* ptr = root;
+    Node* prev = NULL;
+
+    while (ptr != NULL) {
+        if (key == ptr->key) {
+            return root; // Key already exists, no insertion
+        }
+        prev = ptr;
+        if (key < ptr->key)
             ptr = ptr->left;
-        }
-        else{
-            prev = ptr;
+        else
             ptr = ptr->right;
-        }
-        if(key < prev->key){
-            prev->left = new Node(key);
-        }
-        else{
-            perv->right = new Node(key);
-        }
     }
+
+    if (key < prev->key)
+        prev->left = new Node(key);
+    else
+        prev->right = new Node(key);
+
     return root;
 }
 
+
 /* recursive solution */
-Node *insert(Node *root, int key){
+Node *insertBST(Node *root, int key){
     if(root==NULL)
         return new Node(key);
     else if(key < root->val)
-        root->left = new Node(key);
+        root->left = insertBST(new Node(key));
     else
-        root->right = new Node(key);
+        root->right = insertBST(new Node(key));
     return root; // this case will be hit when root->key == key
 }
 
