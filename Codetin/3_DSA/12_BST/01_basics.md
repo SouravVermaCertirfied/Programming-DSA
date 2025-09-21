@@ -8,8 +8,7 @@
 - all the operations on the BST are depenedent on height, so if the height is not balanced (ie right and left have almost same number of items)
 
 ## Opertaions
-- serach
-- keep inserting.
+- insert - search - delete
 
 <details><summary>Code for Node Structure</summary>
 
@@ -70,6 +69,13 @@ Node *insertBST(Node *root, int key){
         root->right = insertBST(new Node(key));
     return root; // this case will be hit when root->key == key
 }
+
+```
+## Delete in BST
+
+```cpp
+
+
 
 ```
 
