@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>John Doe | Software Engineer</title>
+  <style>
+    /* Reset & base */
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; transition: all 0.3s ease; }
+    body { background: #f5f7fa; color: #333; line-height: 1.6; }
+    a { color: inherit; text-decoration: none; }
+
+    /* Container */
+    .container { max-width: 900px; margin: 0 auto; padding: 2rem; }
+
+    /* Header */
+    header { text-align: center; margin-bottom: 3rem; }
+    header h1 { font-size: 2.8rem; background: linear-gradient(90deg,#4facfe,#00f2fe); -webkit-background-clip: text; -webkit-text-fill-color: transparent; margin-bottom: 0.5rem; }
+    header p { font-size: 1.2rem; color: #666; }
+
+    /* Sections */
+    section { margin-bottom: 3rem; }
+    h2 { font-size: 1.5rem; margin-bottom: 1rem; border-bottom: 2px solid #e0e0e0; padding-bottom: 0.5rem; color: #444; }
+
+    /* About */
+    .about p { max-width: 700px; margin: 0 auto; font-size: 1rem; color: #555; }
+
+    /* Projects */
+    .projects { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; }
+    .project { background: #fff; padding: 1.5rem; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); transform: translateY(0); transition: all 0.3s ease; }
+    .project h3 { margin-bottom: 0.5rem; color: #4facfe; }
+    .project p { font-size: 0.95rem; color: #555; }
+    .project:hover { transform: translateY(-5px); box-shadow: 0 8px 20px rgba(0,0,0,0.12); }
+
+    /* Contact */
+    .contact p { margin-bottom: 1rem; color: #555; }
+    .contact a { display: inline-block; margin-right: 1rem; padding: 0.6rem 1.2rem; border: 2px solid #4facfe; border-radius: 6px; color: #4facfe; font-weight: 500; transition: all 0.3s ease; }
+    .contact a:hover { background: #4facfe; color: #fff; }
+
+    /* Footer */
+    footer { text-align: center; padding: 1rem 0; border-top: 1px solid #e0e0e0; color: #999; font-size: 0.9rem; }
+
+    /* Responsive */
+    @media(max-width: 600px) {
+      .projects { grid-template-columns: 1fr; }
+      header h1 { font-size: 2rem; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Header -->
+    <header>
+      <h1>John Doe</h1>
+      <p>Software Engineer | Frontend & Backend Developer</p>
+    </header>
+
+    <!-- About Section -->
+    <section class="about">
+      <h2>About Me</h2>
+      <p>Hello! I'm John Doe, a passionate software engineer who loves crafting modern web applications. I focus on creating user-friendly experiences and efficient, scalable code. My goal is to turn ideas into elegant digital solutions.</p>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects-section">
+      <h2>Projects</h2>
+      <div class="projects">
+        <div class="project">
+          <h3>Project One</h3>
+          <p>A task management app built with React and Node.js that helps users stay productive and organized.</p>
+        </div>
+        <div class="project">
+          <h3>Project Two</h3>
+          <p>An e-commerce platform with a clean UI, secure payments, and a smooth shopping experience for users.</p>
+        </div>
+        <div class="project">
+          <h3>Project Three</h3>
+          <p>A personal blog platform supporting Markdown, real-time comments, and authentication for a secure experience.</p>
+        </div>
+        <div class="project">
+          <h3>Project Four</h3>
+          <p>A data analytics project predicting trends using Python and TensorFlow, making insights accessible and actionable.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact">
+      <h2>Contact</h2>
+      <p>Reach out via email or connect on LinkedIn:</p>
+      <a href="mailto:john.doe@example.com">Email Me</a>
+      <a href="https://linkedin.com/in/johndoe" target="_blank">LinkedIn</a>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      &copy; 2025 John Doe. All rights reserved.
+    </footer>
+  </div>
+</body>
+</html>

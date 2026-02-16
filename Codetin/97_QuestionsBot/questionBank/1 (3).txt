@@ -1,0 +1,55 @@
+##  
+Explain volatile keyword and its use cases  
+##  
+
+##  
+Difference between const and volatile  
+##  
+
+##  
+Can you use volatile and const together? Where?  
+##  
+
+##  
+Difference between static and global variables  
+##  
+
+##  
+Storage classes in C - explain each  
+##  
+
+##  
+What is the use of extern keyword?  
+##  
+
+##  
+Difference between macro and inline functions  
+##  
+
+##  
+What happens if you modify a const variable using pointer?  
+##  
+
+##  
+Explain pointer to const vs const pointer  
+##  
+
+##  
+How to implement your own sizeof function using pointers?  
+##  
+
+##  
+What is void pointer and why is it used?  
+##  
+
+##  
+Pointer arithmetic - explain with examples  
+##  
+
+##  
+How function pointers are shared across processes?  
+##  
+
+##  
+Dangling pointer vs wild pointer  
+##  

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>John Doe | Software Engineer</title>
+<style>
+  /* Reset */
+  * { margin:0; padding:0; box-sizing:border-box; font-family: 'Poppins', sans-serif; transition:0.3s ease; }
+  body { background: #0f0f1a; color: #eee; line-height:1.6; overflow-x: hidden; }
+
+  /* Container */
+  .container { max-width: 1000px; margin:0 auto; padding:2rem; }
+
+  /* Header */
+  header { text-align:center; padding:4rem 2rem; animation: fadeIn 1.2s ease forwards; opacity:0; }
+  header h1 { font-size:3rem; background: linear-gradient(90deg, #ff6ec4, #7873f5); -webkit-background-clip:text; -webkit-text-fill-color:transparent; }
+  header p { font-size:1.2rem; color:#bbb; margin-top:0.5rem; }
+
+  /* Sections */
+  section { margin-bottom:4rem; animation: fadeIn 1.2s ease forwards; opacity:0; }
+  section:nth-of-type(2){ animation-delay:0.5s; }
+  section:nth-of-type(3){ animation-delay:1s; }
+  section:nth-of-type(4){ animation-delay:1.5s; }
+
+  h2 { font-size:2rem; color:#fff; border-bottom:2px solid #444; padding-bottom:0.5rem; margin-bottom:1.5rem; }
+
+  /* About */
+  .about p { max-width:700px; margin:0 auto; color:#ccc; font-size:1rem; }
+
+  /* Projects */
+  .projects { display:grid; grid-template-columns: repeat(auto-fit, minmax(250px,1fr)); gap:2rem; }
+  .project { background: linear-gradient(145deg, #1a1a2e, #162447); padding:1.5rem; border-radius:12px; box-shadow: 0 6px 20px rgba(0,0,0,0.5); transform:translateY(0); transition:0.4s; }
+  .project h3 { color:#ff6ec4; margin-bottom:0.5rem; }
+  .project p { color:#ccc; font-size:0.95rem; }
+  .project:hover { transform:translateY(-10px) scale(1.02); box-shadow:0 12px 30px rgba(0,0,0,0.6); }
+
+  /* Contact */
+  .contact p { text-align:center; color:#ccc; margin-bottom:1rem; }
+  .contact a { display:inline-block; margin:0.5rem; padding:0.7rem 1.5rem; border-radius:8px; background:linear-gradient(90deg,#ff6ec4,#7873f5); color:#fff; font-weight:500; transition:0.3s; }
+  .contact a:hover { transform:scale(1.05); box-shadow:0 8px 20px rgba(255,110,196,0.4); }
+
+  /* Footer */
+  footer { text-align:center; padding:2rem 0; color:#888; border-top:1px solid #333; font-size:0.9rem; }
+
+  /* Animations */
+  @keyframes fadeIn { from {opacity:0; transform:translateY(20px);} to {opacity:1; transform:translateY(0);} }
+
+  /* Responsive */
+  @media(max-width:600px){ header h1{ font-size:2rem; } }
+</style>
+</head>
+<body>
+  <div class="container">
+    <!-- Header -->
+    <header>
+      <h1>John Doe</h1>
+      <p>Software Engineer | Modern Web Developer</p>
+    </header>
+
+    <!-- About Section -->
+    <section class="about">
+      <h2>About Me</h2>
+      <p>I'm John Doe, a software engineer who builds beautiful, performant, and modern web applications. My passion is turning complex problems into seamless digital experiences with clean and efficient code.</p>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects-section">
+      <h2>Projects</h2>
+      <div class="projects">
+        <div class="project">
+          <h3>Project One</h3>
+          <p>A task tracker app built with React and Node.js that helps users stay productive and organized.</p>
+        </div>
+        <div class="project">
+          <h3>Project Two</h3>
+          <p>A modern e-commerce platform with smooth UI, secure payments, and optimized performance.</p>
+        </div>
+        <div class="project">
+          <h3>Project Three</h3>
+          <p>Personal blog platform supporting Markdown, real-time comments, and user authentication.</p>
+        </div>
+        <div class="project">
+          <h3>Project Four</h3>
+          <p>Data analytics dashboard predicting trends using Python and TensorFlow for actionable insights.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact">
+      <h2>Contact</h2>
+      <p>Reach out via email or connect on LinkedIn:</p>
+      <a href="mailto:john.doe@example.com">Email Me</a>
+      <a href="https://linkedin.com/in/johndoe" target="_blank">LinkedIn</a>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      &copy; 2025 John Doe. All rights reserved.
+    </footer>
+  </div>
+</body>
+</html>

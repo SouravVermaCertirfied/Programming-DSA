@@ -1,0 +1,338 @@
+import os
+import re
+from html import escape
+
+# =====================================================
+# HARDCODED PATHS
+# =====================================================
+SRC_DIR = r"D:\Nexteer\Codetin\01_C"
+DEST_HTML = r"D:\Nexteer\Codetin\98_RepoMangers\out.html"
+
+# =====================================================
+# HELPERS
+# =====================================================
+def slugify(text):
+    return re.sub(r"[^a-zA-Z0-9]+", "-", text.lower()).strip("-")
+
+def parse_markdown(md_text, file_slug):
+    html = []
+    nav = []
+    in_code = False
+    code_lang = ""
+    in_list = False
+    in_table = False
+    table_rows = []
+
+    for line in md_text.splitlines():
+        line_strip = line.strip()
+
+        # Fenced code blocks
+        if line_strip.startswith("```"):
+            if not in_code:
+                code_lang = line_strip[3:].strip()
+                html.append(f'<pre><code class="language-{escape(code_lang)}">')
+                in_code = True
+            else:
+                html.append("</code></pre>")
+                in_code = False
+                code_lang = ""
+            continue
+
+        if in_code:
+            html.append(escape(line))
+            continue
+
+        # Tables
+        if "|" in line_strip and not line_strip.startswith("#"):
+            cells = [c.strip() for c in line_strip.split("|")]
+            if not in_table:
+                in_table = True
+                table_rows.append("<table>")
+            table_rows.append("<tr>" + "".join(f"<td>{escape(c)}</td>" for c in cells if c) + "</tr>")
+            continue
+        else:
+            if in_table:
+                table_rows.append("</table>")
+                html.extend(table_rows)
+                table_rows = []
+                in_table = False
+
+        # Headings
+        m = re.match(r"(#{1,6})\s+(.*)", line)
+        if m:
+            level = len(m.group(1))
+            text = m.group(2).strip()
+            hid = f"{file_slug}-{slugify(text)}"
+            html.append(f'<h{level} id="{hid}">{escape(text)}</h{level}>')
+            nav.append((level, text, hid))
+            continue
+
+        # Lists
+        if line_strip.startswith("- "):
+            if not in_list:
+                html.append("<ul>")
+                in_list = True
+            html.append(f"<li>{escape(line_strip[2:])}</li>")
+            continue
+        else:
+            if in_list:
+                html.append("</ul>")
+                in_list = False
+
+        # Inline formatting
+        line = escape(line)
+        line = re.sub(r"\*\*(.+?)\*\*", r"<strong>\1</strong>", line)
+        line = re.sub(r"\*(.+?)\*", r"<em>\1</em>", line)
+        line = re.sub(r"`(.+?)`", r"<code>\1</code>", line)
+        line = re.sub(r"\[(.+?)\]\((.+?)\)", r'<a href="\2">\1</a>', line)
+
+        if line_strip:
+            html.append(f"<p>{line}</p>")
+
+    # Close open lists/tables
+    if in_list:
+        html.append("</ul>")
+    if in_table:
+        table_rows.append("</table>")
+        html.extend(table_rows)
+
+    return "\n".join(html), nav
+
+# =====================================================
+# PROCESS FILES
+# =====================================================
+sections_html = []
+nav_html = []
+
+md_files = sorted(f for f in os.listdir(SRC_DIR) if f.endswith(".md"))
+
+for idx, filename in enumerate(md_files):
+    file_path = os.path.join(SRC_DIR, filename)
+    file_title = os.path.splitext(filename)[0].replace("_", " ").title()
+    file_slug = f"file-{idx}"
+
+    with open(file_path, "r", encoding="utf-8") as f:
+        md_text = f.read()
+
+    content_html, headings = parse_markdown(md_text, file_slug)
+
+    # Sidebar
+    nav_html.append(f'<li class="file-title">{escape(file_title)}</li>')
+    for level, text, hid in headings:
+        indent = (level - 1) * 12
+        nav_html.append(f'<li style="margin-left:{indent}px"><a href="#{hid}">{escape(text)}</a></li>')
+
+    # Main content
+    sections_html.append(f'<section class="content-section"><h1>{escape(file_title)}</h1>{content_html}</section>')
+
+# =====================================================
+# HTML TEMPLATE WITH THEME TOGGLE
+# =====================================================
+html_template = """<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>My Notes</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+:root {{
+  --bg: #fefefe;
+  --panel: #f0f0f0;
+  --text: #111111;
+  --muted: #555555;
+  --accent: #1a73e8;
+  --border: #cccccc;
+  --code-bg: #eaeaea;
+  --heading-color: #001f4d; /* Navy blue headings */
+}}
+
+body {{
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: system-ui, sans-serif;
+}}
+
+.layout {{
+  display: grid;
+  grid-template-columns: 20% 80%;
+  height: 100vh;
+}}
+
+nav {{
+  background: var(--panel);
+  border-right: 1px solid var(--border);
+  padding: 1rem;
+  overflow-y: auto;
+}}
+
+nav ul {{
+  list-style: none;
+  padding: 0;
+}}
+
+nav li {{
+  margin: 0.3rem 0;
+}}
+
+nav a {{
+  color: var(--muted);
+  text-decoration: none;
+}}
+
+nav a.active {{
+  color: var(--accent);
+  font-weight: 600;
+}}
+
+.file-title {{
+  margin-top: 1rem;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  color: var(--accent);
+}}
+
+main {{
+  padding: 2rem 3rem;
+  overflow-y: auto;
+}}
+
+h1, h2, h3, h4 {{
+  border-bottom: 1px solid var(--border);
+  color: var(--heading-color);
+}}
+
+pre {{
+  background: var(--code-bg);
+  padding: 1rem;
+  border-radius: 6px;
+  overflow-x: auto;
+}}
+
+code {{
+  font-family: ui-monospace, monospace;
+  background: var(--code-bg);
+  padding: 0 3px;
+  border-radius: 3px;
+}}
+
+table {{
+  border-collapse: collapse;
+  width: 100%;
+  margin: 1rem 0;
+}}
+
+table, th, td {{
+  border: 1px solid var(--border);
+}}
+
+th, td {{
+  padding: 0.5rem;
+  text-align: left;
+}}
+
+/* Syntax Highlighting */
+code.keyword {{ color: #d73a49; font-weight: bold; }}
+code.string {{ color: #032f62; }}
+code.number {{ color: #005cc5; }}
+code.comment {{ color: #6a737d; font-style: italic; }}
+
+/* Floating theme toggle button */
+#theme-toggle {{
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: var(--accent);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 24px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+  z-index: 1000;
+}}
+</style>
+</head>
+
+<body>
+<div class="layout">
+  <nav>
+    <ul>
+      {nav}
+    </ul>
+  </nav>
+
+  <main id="main">
+    {content}
+  </main>
+</div>
+
+<button id="theme-toggle">🌓</button>
+
+<script>
+// Scroll highlight
+const links = document.querySelectorAll("nav a");
+const headings = document.querySelectorAll("h1, h2, h3, h4, h5");
+const observer = new IntersectionObserver(entries => {{
+  entries.forEach(e => {{
+    if (e.isIntersecting) {{
+      links.forEach(l => l.classList.remove("active"));
+      const a = document.querySelector('nav a[href="#' + e.target.id + '"]');
+      if (a) a.classList.add("active");
+    }}
+  }});
+}}, {{ root: document.querySelector("main"), threshold: 0.3 }});
+headings.forEach(h => observer.observe(h));
+
+// Basic Python syntax highlighting
+document.querySelectorAll("pre code.language-python").forEach(block => {{
+  let html = block.innerHTML;
+  html = html
+    .replace(/(#.*)/g, '<span class="comment">$1</span>')
+    .replace(/\b(def|for|if|else|return|import|from|class|while|in|and|or|not|with|as|try|except|finally|break|continue|pass|lambda|yield)\b/g, '<span class="keyword">$1</span>')
+    .replace(/(".*?"|'.*?')/g, '<span class="string">$1</span>')
+    .replace(/\b(\d+)\b/g, '<span class="number">$1</span>');
+  block.innerHTML = html;
+}});
+
+// Theme toggle
+const toggle = document.getElementById("theme-toggle");
+let dark = false;
+toggle.addEventListener("click", () => {{
+  dark = !dark;
+  if(dark){{
+    document.documentElement.style.setProperty('--bg', '#0f1117');
+    document.documentElement.style.setProperty('--panel', '#161b22');
+    document.documentElement.style.setProperty('--text', '#e6edf3');
+    document.documentElement.style.setProperty('--muted', '#9da7b3');
+    document.documentElement.style.setProperty('--accent', '#58a6ff');
+    document.documentElement.style.setProperty('--border', '#30363d');
+    document.documentElement.style.setProperty('--code-bg', '#2d2d2d');
+    document.documentElement.style.setProperty('--heading-color', '#58a6ff');
+  }} else {{
+    document.documentElement.style.setProperty('--bg', '#fefefe');
+    document.documentElement.style.setProperty('--panel', '#f0f0f0');
+    document.documentElement.style.setProperty('--text', '#111111');
+    document.documentElement.style.setProperty('--muted', '#555555');
+    document.documentElement.style.setProperty('--accent', '#1a73e8');
+    document.documentElement.style.setProperty('--border', '#cccccc');
+    document.documentElement.style.setProperty('--code-bg', '#eaeaea');
+    document.documentElement.style.setProperty('--heading-color', '#001f4d');
+  }}
+}});
+</script>
+</body>
+</html>
+"""
+
+# =====================================================
+# WRITE OUTPUT
+# =====================================================
+os.makedirs(os.path.dirname(DEST_HTML), exist_ok=True)
+with open(DEST_HTML, "w", encoding="utf-8") as f:
+    f.write(html_template.format(nav="".join(nav_html), content="".join(sections_html)))
+
+print("✅ Website generated with light/dark toggle:", DEST_HTML)

@@ -1,0 +1,27 @@
+##  
+Toggle only the second bit of an 8-bit char  
+##  
+
+##  
+Check if a system is little endian or big endian  
+##  
+
+##  
+Set/clear/toggle the nth bit  
+##  
+
+##  
+Count number of set bits  
+##  
+
+##  
+Swap two numbers without third variable using XOR  
+##  
+
+##  
+Power of 2 check  
+##  
+
+##  
+Find the only non-repeating element  
+##  

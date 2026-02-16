@@ -1,0 +1,75 @@
+#inlcude<stdio.h>
+#include<conio.h>
+
+#define CAPACITY (10u)
+
+typedef struct buffer_type{
+    int *data;
+    int front;
+    int rear;
+    int size; // current no of elements
+    int capacity; // total capaicty
+
+} buffer_type;
+
+buffer_type *init_buffer(int cap){
+    buffer_type *buffy = (buffer_type *)malloc(sizeof(buffer_type));
+    buffy->data = (int *)malloc(sizeof(int)*cap);
+    front = 0;
+    rear = -1;
+    size = 0;
+    return buffy;
+}
+
+void insert(buffer_type *buff, int x){
+    if(buff->size >= buff->capacity){
+        printf("Buffer is full, repacing %d ", buff->data[front]);
+        buff->front = (buff->front + 1 ) % buff->capacity
+        buff->rear = (buff->rear - 1 ) % buff->capacity;
+        size--;
+    }
+    buff->rear = (buff->rear + 1 ) % buff->capacity;
+    size++;
+    buff->data[buff->rear] = x;
+}
+
+void deleteme(buffer_type *buff){
+    if(buff->size <= 0){
+        printf("Underflow\n");
+        return;
+    }
+    printf("Deteting the item %d", buff->data[buff->front]);
+    buff->front = (buff->front + 1) % buff->capacity;
+    size--;
+}
+
+void printbuff(buffer_type *buff){
+    if(buff->size <= 0){
+        printf("Underflow\n");
+        return;
+    }
+    int offset = 0;
+    for(int i=0 ; i<buff->size; i++){
+        offset = ( buff->front + i ) % buff->capacity;
+        printf("%d ",buff->data[offset]);
+    }
+    printf("\n");
+}
+
+void freemybuff(buffer_type *buff){
+    free(buff->data);
+    free(buff);
+    return;
+}
+
+int main(){
+    buffer_type *buff = init_buffer(CAPACITY);
+    for(int i=0; i<15; i++){
+        insert(buff, i);
+        printbuff(buff);
+    }
+    for(int i=0; i<15; i++){
+        deleteme(buff);
+        printbuff(buff);
+    }
+}
