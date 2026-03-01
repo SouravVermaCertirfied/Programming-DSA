@@ -1,52 +1,17 @@
 {
-  "version": 4,
   "configurations": [
     {
-      "name": "windows-gcc-x86",
-      "type": "cppdbg",
-      "request": "launch",
-      "program": "${fileDirname}\\${fileBasenameNoExtension}.exe",
-      "args": [],
-      "stopAtEntry": false,
-      "cwd": "${fileDirname}",
-      "environment": [],
-      "externalConsole": true,
-      "MIMode": "gdb",
-      "miDebuggerPath": "C:/MinGW/bin/gdb.exe",
-      "setupCommands": [
-        {
-          "description": "Enable pretty-printing for gdb",
-          "text": "-enable-pretty-printing",
-          "ignoreFailures": true
-        }
-      ],
-      "preLaunchTask": "C/C++: g++.exe build active file",
-      "compilerPath": "C:/MinGW/bin/gcc.exe",
+      "name": "MinGW64",
+      "compilerPath": "C:/msys64/mingw64/bin/gcc.exe",
+      "intelliSenseMode": "windows-gcc-x64",
       "includePath": [
-        "${workspaceFolder}/**"
+        "${workspaceFolder}/**",
+        "C:/msys64/mingw64/include"
       ],
-      "cStandard": "${default}",
-      "cppStandard": "${default}",
-      "intelliSenseMode": "windows-gcc-x86"
-    },
-    {
-      "name": "C/C++ Runner: Debug Session",
-      "type": "cppdbg",
-      "request": "launch",
-      "args": [],
-      "stopAtEntry": false,
-      "externalConsole": true,
-      "cwd": "d:/Github/Programming-DSA/Codetin/3_DSA/12_BST",
-      "program": "d:/Github/Programming-DSA/Codetin/3_DSA/12_BST/build/Debug/outDebug",
-      "MIMode": "gdb",
-      "miDebuggerPath": "gdb",
-      "setupCommands": [
-        {
-          "description": "Enable pretty-printing for gdb",
-          "text": "-enable-pretty-printing",
-          "ignoreFailures": true
-        }
-      ]
+      "cStandard": "c17",
+      "cppStandard": "c++17",
+      "defines": []
     }
-  ]
+  ],
+  "version": 4
 }
