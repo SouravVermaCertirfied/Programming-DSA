@@ -13,7 +13,7 @@
 
 ## Comparisions
 
-- Comparision operators like ` < ` , ` > ` , ` == ` , ` != ` , ` <= ` , ` => ` should be used only when being used for <span style="color:red;"><strong>pointers within a same array</strong></span> (or say a strcut, however, comparing with struct should be avoided, due to complier dependent behaviour).
+- Comparision operators like ` < ` , ` > ` , ` == ` , ` != ` , ` <= ` , ` => ` should be used only when being used for <span style="color:red;"><strong>pointers within a same array</strong></span> (or say a struct, however, comparing with struct should be avoided, due to complier dependent behaviour).
 - This may lead to undefined behaviour.
 
 ```c
@@ -49,7 +49,7 @@ int main()
 ```
 
 ## Function Pointer
-- All the operators **'&'** and **'*'** can be used with the function name for delaring the function pointer. see eg below.
+- All the operators **'&'** and **'*'** can be used with the function name for declaring the function pointer. see eg below.
 - In C: all these tree styles are valid.
     - The name of a function `foo` automatically decays to a pointer to the function when used in an expression.
     - Dereferencing a function pointer `*foo` gives you the function again.
@@ -68,7 +68,7 @@ int (*fptr3)(int) = &foo;
 ## Function tables - Using Structure (Kinda- polymorphism in C)
 - Let us try to understand this technique using an exmple
     - let take example of SPI and UART
-    - since both are comm protolcs - they can have similar functions like INIT, READ, WRITE.
+    - since both are communication protocols - they can have similar functions like INIT, READ, WRITE.
     - define functions for both and then call them.
 
 ```c

@@ -1,4 +1,4 @@
-/* deisgn a circular queue, 
+/* deisgn a circular queue,
 that overwrites the oldest item if full*/
 #include<iostream>
 using namespace std;
@@ -30,7 +30,7 @@ void insert(int val){
         qsize++;
         return;
     }
-    
+
 }
 
 void del(){
