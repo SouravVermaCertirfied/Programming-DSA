@@ -8,6 +8,7 @@
 
 **Cyclic Grapth** : if there exists a walk that starts and ends on the same vertex.  
 **Acyclic Graph** : If there are no cycles. 
+**Weighted Graph** : Where each edge has a 
 
 Where:
 
