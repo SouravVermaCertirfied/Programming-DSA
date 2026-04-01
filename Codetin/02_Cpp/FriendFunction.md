@@ -1,4 +1,4 @@
-# Frined Functions
+# Friend Functions
 > Friendship is granted, not taken.
 The class which has to give friendship decides what it will share, not the class using the frined's shared item.
 

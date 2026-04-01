@@ -1,136 +1,19 @@
 # DMA (Direct Memory Access) – Staff Level Notes (NVIDIA Interview)
 
+Good read : https://microcontrollerslab.com/dma-introduction-working-programming-mode-arbitration-advantages/
+
 ## 1. What is DMA?
 
 **Direct Memory Access (DMA)** allows hardware devices to transfer data directly to/from system memory **without continuous CPU involvement**.
 
-### Without DMA
+In this hardware mechanism, a DMA controller substitutes the CPU unit and is responsible for accessing the input-output devices and memory for transferring data. 
 
-```
-Device → CPU → RAM
-```
+A DMA controller is dedicated hardware that performs read and write operations directly without the involvement of the CPU and saves time that involves opcode **fetching, decoding, incrementing, and source/destination test addresses** that otherwise, central processing units should do.
 
-CPU copies every piece of data.
+This leads to high data transfer rates between the peripherals and the memory and communicates large blocks of data speedily.
 
-### With DMA
 
-```
-Device → RAM (via DMA Controller)
-CPU notified after completion
-```
 
-CPU only:
-
-1. Programs DMA controller
-2. Continues executing
-3. Receives interrupt when transfer finishes
-
-### Benefits
-
-- High throughput
-- Low CPU overhead
-- Enables large data transfers (GPU, NIC, SSD)
-
----
-
-# 2. Why DMA Is Critical for GPUs
-
-GPUs move massive datasets between devices.
-
-Common transfers:
-
-```
-CPU RAM → GPU VRAM
-GPU VRAM → CPU RAM
-NIC → GPU memory (RDMA)
-SSD → GPU memory
-```
-
-Without DMA the CPU would become the bottleneck.
-
-Used heavily in:
-
-- GPUDirect RDMA
-- GPUDirect Storage
-- PCIe device transfers
-
----
-
-# 3. Basic DMA Architecture
-
-```
-+-----------+        +-------------------+
-|   CPU     |        |  DMA Controller   |
-+-----------+        +-------------------+
-       |                     |
-       | programs registers  |
-       v                     v
-
-+--------------------------------------+
-|            System Memory             |
-+--------------------------------------+
-        ^                     ^
-        |                     |
-      Device                GPU/NIC
-```
-
-DMA controller manages:
-
-- source address
-- destination address
-- transfer size
-- direction
-- completion interrupt
-
----
-
-# 4. DMA Operation Steps
-
-## Step 1 – CPU Setup
-
-CPU writes DMA registers.
-
-```
-src_addr
-dst_addr
-size
-direction
-start
-```
-
-Example:
-
-```
-src = device buffer
-dst = RAM buffer
-size = 4MB
-```
-
----
-
-## Step 2 – DMA Transfer
-
-DMA becomes **bus master** and moves data.
-
-```
-Device ⇄ System Memory
-```
-
-CPU not involved in the actual transfer.
-
----
-
-## Step 3 – Interrupt
-
-After transfer completes:
-
-```
-DMA → Interrupt → CPU
-```
-
-CPU resumes processing the buffer.
-
----
 
 # 5. DMA Transfer Modes
 

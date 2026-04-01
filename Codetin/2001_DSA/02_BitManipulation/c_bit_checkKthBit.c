@@ -1,11 +1,12 @@
 #include <stdio.h>
+#include<stdbool.h>
 
 /* Problem: Check if Kth Bit is set.
    Approch: 
    TC :             SC:    */
 
 bool isKthBitSet(int n, int k){
-    int mask  = 1<<k;
+    unsigned int mask  = 1<<k;
     return (bool)(n & mask);
 }
 int main() {
