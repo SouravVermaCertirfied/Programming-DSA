@@ -5,7 +5,7 @@ Tips :
 
 
 ## Problem 1 : Sparse Bit Count & Manipulation
-Scenario: You are optimizing a low-power firmware module. You need to identify if a 32-bit unsigned integer is "Sparse" and then modify it.
+Scenario: 
 
 Part A: Write a function to determine if a number is Sparse. A number is sparse if no two bits in its binary representation are adjacent (e.g., 5 (101) is sparse, but 6 (110) is not).
 
@@ -65,8 +65,7 @@ uint32_t nextSparse(uint32_t n) {
 
 ## Problem 2 : Convert Big-Endian to Little-Endian or vice versa
 
-Scenario:  
-You are writing a driver for a hardware peripheral. The peripheral sends a 32-bit status register, but due to a PCB routing error, the data is "scrambled." You need to reverse the order of the bytes (not bits) and then extract a specific bitfield.  
+Scenario:   
 
 Part A: Write a function to reverse the byte order of a 32-bit unsigned integer (Convert Big-Endian to Little-Endian or vice versa).  
 
@@ -139,6 +138,7 @@ int countSetBits(uint32_t n) {
 </details>
 
 ## Problem 4 : Check if a number is a power of two ?
+
 Using only one line of code
 
 <details><summary>Answers</summary>  
