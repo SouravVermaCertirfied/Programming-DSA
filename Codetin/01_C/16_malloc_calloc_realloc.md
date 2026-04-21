@@ -135,3 +135,7 @@ int main() {
 }
 ```
 </details>
+
+
+### Can you `malloc` in an ISR?
+No. It’s non-reentrant and can cause a Deadlock if the main thread was already in a `malloc` call.
