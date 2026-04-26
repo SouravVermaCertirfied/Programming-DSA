@@ -15,7 +15,7 @@ public:
 
     // Member function
     void display() {
-        // cout << "Brand: " << brand << ", Year: " << year << endl;
+        cout << "Brand: " << brand << ", Year: " << year << endl;
     }
 };
 

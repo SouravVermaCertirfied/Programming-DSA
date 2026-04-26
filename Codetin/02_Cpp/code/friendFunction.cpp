@@ -1,21 +1,24 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
 
-class A{
-    private:
-        int id;
-    public:
-        void function();    
+class A
+{
+private:
+public:
+    int id;
+    void function();
 };
 
-class B{
-    public:
-        void printId(A &a){
-            cout<<a.id;
-        }
+class B
+{
+public:
+    void printId(A &a)
+    {
+        cout << a.id;
+    }
 };
 
-int main(){
+int main()
+{
     return 0;
-    
 }

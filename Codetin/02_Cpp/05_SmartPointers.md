@@ -2,7 +2,7 @@
 - **Smart pointers** are essentially wrappers around raw pointers that handle the cleanup for you. 
 - When the smart pointer object goes out of scope, it automatically deallocates the memory. Think of it as a specialized "garbage collection" for C++ that happens at compile-time rather than run-time.
 
-Here is the breakdown of the three main types found in the **`<memory>` header***.
+Here is the breakdown of the three main types found in the **`<memory>` header**.
 
 ---
 
@@ -18,12 +18,13 @@ Here is the breakdown of the three main types found in the **`<memory>` header**
 #include <iostream>
 #include <memory> // ☢️☢️☢️
 
-void uniqueDemo() {
+int main() {
     // Creating a unique pointer
     std::unique_ptr<int> p1 = std::make_unique<int>(10);
     
     // std::unique_ptr<int> p2 = p1; // ERROR: Cannot copy
     std::unique_ptr<int> p2 = std::move(p1); // OK: p1 is now null
+    return 0;
 }
 ```
 

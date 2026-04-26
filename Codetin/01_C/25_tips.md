@@ -16,3 +16,5 @@ unsigned int x = 1U << 31; // Safe and well-defined
 - you CANNOT initilize the default values for a `struct` in C.
 - you CAN initilize the default values for a `struct` in CPP. Only for C++ v11 plus.
 - you class you can always do it in, ofcorse in CPP.
+
+

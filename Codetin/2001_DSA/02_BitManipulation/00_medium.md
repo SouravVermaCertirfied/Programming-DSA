@@ -138,7 +138,7 @@ int countSetBits(uint32_t n) {
 </details>
 
 ## Problem 4 : Check if a number is a power of two ?
-
+            
 Using only one line of code
 
 <details><summary>Answers</summary>  

@@ -125,7 +125,7 @@ int main(){
 </details>
 
 
-**Can you write this without `friend` keyword ?**  
+> **Can you write this without `friend` keyword ?**  
 Yes, you can absolutely do this without the friend keyword. However, there is a catch: you must provide a public way to access the private data.
 
 <details><summary>Code here</summary>

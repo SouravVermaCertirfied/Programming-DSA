@@ -71,11 +71,11 @@ void printmycq(circularQ *mycq){
     else{
         int i =  mycq->front;
         while(i<QSIZE){
-            print("%d ",mycq->cq[i]);
+            printf("%d ",mycq->cq[i]);
         }
         i = 0;
         while(i<=mycq->rear){
-            print("%d ",mycq->cq[i]);
+            printf("%d ",mycq->cq[i]);
         }
     }
     printf("\n");
