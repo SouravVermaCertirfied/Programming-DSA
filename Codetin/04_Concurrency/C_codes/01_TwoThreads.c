@@ -3,6 +3,7 @@
 #include<stdio.h>
 #include<stdlib.h>
 #include<pthread.h>
+#include<conio.h>
 
 void *myfunction(void *args){
     char *message = (char *)args;
@@ -17,7 +18,6 @@ int main(){
 
     pthread_join(t1, NULL);
     pthread_join(t2, NULL);
-
     printf("End of program.");
     return 0;
 }

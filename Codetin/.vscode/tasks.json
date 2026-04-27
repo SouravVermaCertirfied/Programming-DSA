@@ -2,19 +2,86 @@
     "version": "2.0.0",
     "tasks": [
         {
-            "label": "Build Active File",
+            "label": "Build and Run C File",
             "type": "shell",
-            "command": "C:/msys64/mingw64/bin/gcc.exe",
+            "command": "cmd",
             "args": [
-                "-g",
-                "${file}",
-                "-o",
-                "${fileDirname}/${fileBasenameNoExtension}.exe",
-                "-pthread"
+                "/c",
+                "cd /d \"${fileDirname}\" && C:\\msys64\\mingw64\\bin\\gcc.exe -g \"${file}\" -o \"${fileBasenameNoExtension}.exe\" -pthread && \"${fileBasenameNoExtension}.exe\""
+            ],
+            "group": {
+                "kind": "test",
+                "isDefault": false
+            },
+            "presentation": {
+                "reveal": "always",
+                "panel": "new",
+                "focus": true,
+                "echo": true
+            },
+            "problemMatcher": [
+                "$gcc"
+            ]
+        },
+        {
+            "label": "Build and Run C++ File",
+            "type": "shell",
+            "command": "cmd",
+            "args": [
+                "/c",
+                "cd /d \"${fileDirname}\" && C:\\msys64\\mingw64\\bin\\g++.exe -g \"${file}\" -o \"${fileBasenameNoExtension}.exe\" -pthread && \"${fileBasenameNoExtension}.exe\""
+            ],
+            "group": {
+                "kind": "test",
+                "isDefault": true
+            },
+            "presentation": {
+                "reveal": "always",
+                "panel": "new",
+                "focus": true,
+                "echo": true
+            },
+            "problemMatcher": [
+                "$gcc"
+            ]
+        },
+        {
+            "label": "Build C File",
+            "type": "shell",
+            "command": "cmd",
+            "args": [
+                "/c",
+                "cd /d \"${fileDirname}\" && C:\\msys64\\mingw64\\bin\\gcc.exe -g \"${file}\" -o \"${fileBasenameNoExtension}.exe\" -pthread"
             ],
             "group": {
                 "kind": "build",
                 "isDefault": false
+            },
+            "presentation": {
+                "reveal": "always",
+                "panel": "new",
+                "focus": true
+            },
+            "problemMatcher": [
+                "$gcc"
+            ]
+        },
+        {
+            "label": "Build C++ File",
+            "type": "shell",
+            "command": "cmd",
+            "args": [
+                "/c",
+                "cd /d \"${fileDirname}\" && C:\\msys64\\mingw64\\bin\\g++.exe -g \"${file}\" -o \"${fileBasenameNoExtension}.exe\" -pthread"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": false
+            },
+            "presentation": {
+                "reveal": "always",
+                "panel": "new",
+                "focus": true
             },
             "problemMatcher": [
                 "$gcc"
