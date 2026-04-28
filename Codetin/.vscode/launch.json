@@ -2,7 +2,7 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "name": "Run C File (no debug)",
+      "name": "Debug C Program",
       "type": "cppdbg",
       "request": "launch",
       "program": "${fileDirname}\\${fileBasenameNoExtension}.exe",
@@ -19,12 +19,17 @@
           "description": "Enable pretty-printing for gdb",
           "text": "-enable-pretty-printing",
           "ignoreFailures": true
+        },
+        {
+          "description": "Set disassembly flavor to Intel",
+          "text": "set disassembly-flavor intel",
+          "ignoreFailures": true
         }
       ],
-      "preLaunchTask": "Build C File"
+      "preLaunchTask": "Build C (gcc)"
     },
     {
-      "name": "Run C++ File (no debug)",
+      "name": "Debug C++ Program",
       "type": "cppdbg",
       "request": "launch",
       "program": "${fileDirname}\\${fileBasenameNoExtension}.exe",
@@ -41,53 +46,14 @@
           "description": "Enable pretty-printing for gdb",
           "text": "-enable-pretty-printing",
           "ignoreFailures": true
-        }
-      ],
-      "preLaunchTask": "Build C++ File"
-    },
-    {
-      "name": "Debug C File",
-      "type": "cppdbg",
-      "request": "launch",
-      "program": "${fileDirname}\\${fileBasenameNoExtension}.exe",
-      "args": [],
-      "stopAtEntry": true,
-      "cwd": "${fileDirname}",
-      "environment": [],
-      "externalConsole": false,
-      "console": "integratedTerminal",
-      "MIMode": "gdb",
-      "miDebuggerPath": "C:\\msys64\\mingw64\\bin\\gdb.exe",
-      "setupCommands": [
+        },
         {
-          "description": "Enable pretty-printing for gdb",
-          "text": "-enable-pretty-printing",
+          "description": "Set disassembly flavor to Intel",
+          "text": "set disassembly-flavor intel",
           "ignoreFailures": true
         }
       ],
-      "preLaunchTask": "Build C File"
-    },
-    {
-      "name": "Debug C++ File",
-      "type": "cppdbg",
-      "request": "launch",
-      "program": "${fileDirname}\\${fileBasenameNoExtension}.exe",
-      "args": [],
-      "stopAtEntry": true,
-      "cwd": "${fileDirname}",
-      "environment": [],
-      "externalConsole": false,
-      "console": "integratedTerminal",
-      "MIMode": "gdb",
-      "miDebuggerPath": "C:\\msys64\\mingw64\\bin\\gdb.exe",
-      "setupCommands": [
-        {
-          "description": "Enable pretty-printing for gdb",
-          "text": "-enable-pretty-printing",
-          "ignoreFailures": true
-        }
-      ],
-      "preLaunchTask": "Build C++ File"
+      "preLaunchTask": "Build C++ (g++)"
     },
     {
       "name": "C/C++ Runner: Debug Session",
@@ -96,8 +62,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "d:/Github/Programming-DSA/Codetin/04_Concurrency/C_codes",
-      "program": "d:/Github/Programming-DSA/Codetin/04_Concurrency/C_codes/build/Debug/outDebug",
+      "cwd": "d:/Github/Programming-DSA/Codetin/95_rough",
+      "program": "d:/Github/Programming-DSA/Codetin/95_rough/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
