@@ -1,0 +1,11 @@
+# IDE settings
+
+# Compiled Binaries
+*.exe
+*.o
+*.out
+
+# MSVC specific (if you ever use it)
+*.obj
+*.pdb
+*.sln

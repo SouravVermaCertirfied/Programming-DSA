@@ -15,7 +15,6 @@ int main(){
 
     pthread_create(&t1, NULL, myfunction, "t1 enter chat.\n");
     pthread_create(&t2, NULL, myfunction, "t2 enter chat.\n");
-
     pthread_join(t1, NULL);
     pthread_join(t2, NULL);
     printf("End of program.");
