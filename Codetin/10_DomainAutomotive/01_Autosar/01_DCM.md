@@ -1,5 +1,7 @@
 # DCM
 
+<details><summary>FlowChart</summary>
+
 ```javascript
 
 [ EXTERNAL DIAGNOSTIC TESTER ]
@@ -68,3 +70,4 @@
 [ EXTERNAL DIAGNOSTIC TESTER ]
 
 ```
+</details>
