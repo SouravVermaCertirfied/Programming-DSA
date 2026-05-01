@@ -1,3 +1,5 @@
+# Smart pointers
+
 
 - **Smart pointers** are essentially wrappers around raw pointers that handle the cleanup for you. 
 - When the smart pointer object goes out of scope, it automatically deallocates the memory. Think of it as a specialized "garbage collection" for C++ that happens at compile-time rather than run-time.
