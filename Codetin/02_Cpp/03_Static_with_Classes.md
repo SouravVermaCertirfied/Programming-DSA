@@ -1,4 +1,4 @@
-Static
+# `static`
 
 **Static Data Members:**  
 - Shared among all objects of the class.
@@ -10,9 +10,8 @@ Static
 - Do not have access to the this pointer.
 - Can be called using the class name.
 
-## Example
+## Example **Static Data Members:**  
 
-**Static Data Members:**  
 ```cpp
 #include<iostream>
 using namespace std;
@@ -37,7 +36,7 @@ int main() {
     return 0;
 }
 ```
-**Static Member Functions:**
+## Example **Static Member Functions:**
 ```cpp
 #include<iostream>
 using namespace std;

@@ -2,13 +2,13 @@
 > Friendship is granted, not taken.
 The class which has to give friendship decides what it will share, not the class using the frined's shared item.
 
-### Key points:
-- Friendship is not inherited
-- Frinedship is not translative
-- Friendship is not mutual
-- Frindship is granted, not taken
+> ### **Friendship is :**
+> - not inherited
+> - not translative
+> - not mutual
+> - granted, not taken
 
-A single class member variable CANNOT to be friend, friendship is done at class and function levels.
+*A single class member variable CANNOT to be friend, friendship is done at class and function levels.*
 
 ### Making a function a friend
 Uses forward declaration technqiue.  

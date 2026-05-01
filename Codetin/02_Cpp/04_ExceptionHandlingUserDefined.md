@@ -1,4 +1,4 @@
-# Example 1: Handling Array Size Errors with User-Defined Exceptions ( without using `exception` class)
+# Example 1: User-Defined Exceptions ( without using `exception` class)
 
 Problem Statement: We want to calculate the average of an array.   
 However, if:  
@@ -56,7 +56,7 @@ int main()
 
 ---
 
-# Example 2: Creating a Custom Exception Using the `exception` Class
+# Example 2: User-Defined Exception Using the `exception` Class
 We want to create a custom `exception` class by inheriting from the standard exception class. This allows us to override the `what()` function to provide a custom error message.
 
 <details><summary>Code here</summary>
