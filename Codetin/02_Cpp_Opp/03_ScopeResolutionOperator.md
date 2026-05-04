@@ -61,10 +61,3 @@ std::cout << "Direct access";
 If a class inherits from two different classes that happen to have a function with the same name, you must use the scope resolution operator to specify which parent's function you want to call.
 
 ---
-
-## Why Use It?
-*   **Clarity:** It makes it obvious where a function or variable is coming from.
-*   **Conflict Prevention:** It allows different libraries to use the same names (like `draw()`) without crashing into each other.
-*   **Organization:** It facilitates the separation of interface (header files) and implementation (source files).
-
-Do you have a specific code snippet where the scope is getting confusing, or are you looking into how this works with namespaces specifically?

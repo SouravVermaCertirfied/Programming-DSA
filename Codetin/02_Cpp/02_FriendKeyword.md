@@ -8,9 +8,21 @@ The class which has to give friendship decides what it will share, not the class
 > - not mutual
 > - granted, not taken
 
+
+## The C++ Implementation
+In C++, the `friend` keyword allows a specific function or class to access the **private** and **protected** members of another class. It essentially "breaks" encapsulation for the sake of efficiency or logic.
+
+
+
+*   **Friend Function:** A global function that can peek into a class's private data.
+*   **Friend Class:** If Class A is a friend of Class B, every member function of Class A can access Class B's private members.
+*   **Why use it?** It’s most commonly used for **operator overloading** (like `<<` for output streams) or when two classes are so tightly coupled that they need direct access to each other to work efficiently.
+
+---
+
 *A single class member variable CANNOT to be friend, friendship is done at class and function levels.*
 
-### Making a function a friend
+## Making a function a friend
 Uses forward declaration technqiue.  
 Example:
 ```cpp
@@ -48,7 +60,7 @@ int main() {
 }
 ```
 
-### Making a class a friend
+## Making a class a friend
 
 ```cpp
 #include <iostream>

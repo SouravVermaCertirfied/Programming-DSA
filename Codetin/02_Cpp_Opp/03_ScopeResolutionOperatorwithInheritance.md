@@ -5,7 +5,8 @@ The compiler won't know which version to use and will throw a compile-time error
 ---
 
 ## 1. The Conflict Scenario
-Imagine two parent classes, `Scanner` and `Printer`, both having a function named `powerOn()`. If a `Copier` class inherits from both, calling `powerOn()` creates a conflict.
+Imagine two parent classes, `Scanner` and `Printer`, both having a function named `powerOn()`. If a `Copier` class inherits from both, calling `powerOn()` creates a conflict.  
+If you try to call `myCopier.powerOn()`, the compiler will fail because the call is **ambiguous**.
 
 <details><summary> Code here </summary>
 
@@ -26,7 +27,7 @@ class Copier : public Scanner, public Printer {
 ```
 </details>
 
-If you try to call `myCopier.powerOn()`, the compiler will fail because the call is **ambiguous**.
+
 
 ---
 
