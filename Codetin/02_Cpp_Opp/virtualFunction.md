@@ -1,3 +1,0 @@
-# vtable
-
-# vpointers
