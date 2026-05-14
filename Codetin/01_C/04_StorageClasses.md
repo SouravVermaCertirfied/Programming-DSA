@@ -1,10 +1,9 @@
-# Storage Classes in C
+# Storage Classes in C `ARCV`
 
 > They decide - ***memory*** where it will stored, ***scope*** of the variable and ***access*** of the variable.
 
 - There are 4 storage classes
 - `auto`, `register`, `static` and `extern`
-
 
 ### Summary
 

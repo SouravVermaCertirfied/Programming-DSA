@@ -1,4 +1,4 @@
-# Type Qualifiers
+# Type Qualifiers `RAsE`
 
 - They tell more info about how a variable can be **accessed** and **modified**.
 - 4 types - `const` , `volatile` , `restrict` and `_Atomic`
