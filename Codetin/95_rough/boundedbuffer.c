@@ -15,15 +15,14 @@ The buffer must have a maximum capacity $N$ allocated at initialization.Blocking
 #include<stdio.h>
 #include<pthread.h>
 
-#define CAP 10
+#define N 10
 
 typedef struct cqueue_t{
+    int buff[N];
+    int cap;
     int front;
     int rear;
-    int size;
-    int cap;
 
-    int buff[CAP];
 
     pthread_mutex_t qlock;
     pthread_cond_t qcond;
@@ -31,68 +30,97 @@ typedef struct cqueue_t{
 
 cqueue_t cq;
 
-void cqInit(){
-    cq.front = -1;
-    cq.rear = -1;
-    cq.size = 0;
-    cq.cap = CAP;
-    pthread_mutex_init(&cq.qlock, NULL);
-    pthread_cond_init(&cq.cond, NULL);
+bool isEmpty(){
+    if(cq.front==-1)
+        return true;
+    if((cq.rear+1%cq.cap) != cq.front)
+        return true;
+    return false;
 }
 
-void cqDestroy(){
-    cq.front = -1;
-    cq.rear = -1;
-    cq.size = 0;
-    cq.cap = CAP;
-    pthread_destroy(&cq.qlock);
-    pthread_destroy(&cq.cond);
-}
-
-void cenque(int item){
-    if(cq.front==-1){
-        cq.front = 0;
+void enqueue(int item){
+    if(isEmpty()){
+        // first item
+        if(cq.front==-1){
+            cq.front++;
+        }
+        //any other item
+        cq.rear = (cq.rear+1)%cq.cap;
+        cq.buff[cq.rear] = item;
     }
-    cq.rear = (cq.rear+1)%cq.cap;
-    cq.buff[rear]=item;
-    size++;
 }
 
-void cdequeue(int)
+int dequeue(){
+    int ret;
+    if(!isEmpty()){
+        if(cq.front==cq.rear){
+            ret = cq.buff[cq.front];
+            cq.front=-1;
+            cq.rear = -1;
+        }
+        else{
+            ret = cq.buff[cq.front];
+            cq.front = (cq.front+1)%cq.cap;
+        }
+    }
+    return ret;
+}
 
 void* producer(void *args){
     for(int i=0; i<100; i++){
-        pthread_mutex_lock(&cq.lock);
+        pthread_mutex_lock(&cq.qlock);
         while(!isEmpty()){
-            pthread_cond_wait(&cq.cond, &cq.lock);
+            pthread_cond_wait(&cq.qcond, &cq.qlock);
         }
-        int item = 5;
-        cenque(item);
-        pthread_cond_signal(&cq.cond);
-        pthread_mutex_unlock(&cq.lock);
+        int rand = 5;
+        enqueue(i);
+        printf("inserted i = %d \n", i);
+        pthread_cond_signal(&cq.qcond);
+        pthread_mutex_unlock(&cq.qlock);
     }
     return NULL;
 }
 
 void* consumer(void *args){
     while(1){
-        pthread_mutex_lock(&cq.lock);
+        pthread_mutex_lock(&cq.qlock);
         while(isEmpty()){
-            pthread_cond_wait(&cq.cond, &cq.lock);
+            pthread_cond_wait(&cq.qcond, &cq.qlock);
         }
-        int item;
-        item = cdequeue();
-        pthread_mutex_unlock(&cq.lock);
-        item = 
+        int ret = dequeue();
+        printf("extracted val = %d \n", ret);
+        pthread_mutex_unlock(&cq.qlock);
     }
+    return NULL;
+}
+
+void cqinit(){
+    cq.front = -1;
+    cq.rear = -1;
+    cq.cap = N;
+
+    pthread_mutex_init(&cq.qlock, NULL);
+    pthread_cond_init(&cq.qcond, NULL);
+}
+
+void cdestroy(){
+    cq.front = -1;
+    cq.rear = -1;
+
+    pthread_mutex_destroy(&cq.qlock);
+    pthread_cond_destroy(&cq.qcond);
 }
 
 int main(){
-    cqInit();
-
-
-
-    cqDestroy();
+    pthread_t pro[5], con[5];
+    for(int i=0; i<5; i++){
+        pthread_create(&pro[i], NULL, producer, NULL);
+        pthread_create(&con[i], NULL, consumer, NULL);
+    }
+    for(int i=0; i<5; i++){
+        pthread_join(pro[i], NULL);
+        pthread_join(con[i], NULL);
+    }
+    
     return 0;
 }
-

@@ -1,8 +1,6 @@
 # Overriding
 
-Here is a condensed summary of everything we've covered regarding C++ Polymorphism, followed by an FAQ based on your specific queries.
 
----
 
 ## 🏛️ C++ Function Overriding: The Essentials
 
