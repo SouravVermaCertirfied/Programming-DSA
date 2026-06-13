@@ -123,3 +123,9 @@ Address        Entry
 
 
 ---
+
+---
+<div style="display: flex; justify-content: space-between;">
+    <a href="CPU.md">← CPU.md</a>
+    <a href="timersAndClock.md">timersAndClock.md →</a>
+</div>

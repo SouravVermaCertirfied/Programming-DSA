@@ -98,3 +98,9 @@ int main() {
 
 ### Important Tip for C++ Learners
 In professional C++ code, we often use **Smart Pointers** (`std::shared_ptr` and `std::weak_ptr`) for this pattern. If the `Subject` holds a raw pointer to an `Observer` that gets deleted, the program will crash when it tries to notify it. Using `std::weak_ptr` allows the Subject to check if the Observer still exists before trying to talk to it.
+
+---
+<div style="display: flex; justify-content: space-between;">
+    <a href="03_Factory.md">← 03_Factory.md</a>
+    
+</div>

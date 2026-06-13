@@ -14,5 +14,10 @@
 - What is thrashing ?
 - ⏭
 - Diff between mutex vs semaphore ?
-- 
+-
 
+---
+<div style="display: flex; justify-content: space-between;">
+    <span></span>
+    <a href="DeadLock.md">DeadLock.md →</a>
+</div>

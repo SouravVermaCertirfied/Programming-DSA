@@ -49,3 +49,9 @@ To truly test your **Definition of Done**, you need to move past definitions and
 * **If you get stuck on the C/Pointer questions:** Spend 48 hours refreshing your C fundamentals, then **apply.**
 
 **Which of these four sections felt the most difficult for you just now?**
+
+---
+<div style="display: flex; justify-content: space-between;">
+    <span></span>
+    <a href="specificQuestions.md">specificQuestions.md →</a>
+</div>

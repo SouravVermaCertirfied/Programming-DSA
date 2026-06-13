@@ -201,3 +201,9 @@ int main()
 }
 
 ```
+
+---
+<div style="display: flex; justify-content: space-between;">
+    <a href="07_sizeof.md">← 07_sizeof.md</a>
+    <a href="09_PointersQB.md">09_PointersQB.md →</a>
+</div>

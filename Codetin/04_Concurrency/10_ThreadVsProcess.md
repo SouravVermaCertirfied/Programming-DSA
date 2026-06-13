@@ -120,3 +120,9 @@ Golden Rule : Use atomic for states and atomic for relationships.
 | Blocking                   | Yes    | No     |
 | Overhead                   | Higher | Lower  |
 | Complex invariants         | ✅      | ❌      |
+
+---
+<div style="display: flex; justify-content: space-between;">
+    <a href="00_QuestionBank.md">← 00_QuestionBank.md</a>
+    <a href="11_Deadlocks.md">11_Deadlocks.md →</a>
+</div>

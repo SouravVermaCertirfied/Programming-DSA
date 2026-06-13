@@ -89,3 +89,9 @@ is declared else where.
     extern int var1;
     extern int func1();
     ```
+
+---
+<div style="display: flex; justify-content: space-between;">
+    <a href="03_MemoryAllocationOfC.md">← 03_MemoryAllocationOfC.md</a>
+    <a href="05_QuestionBank.md">05_QuestionBank.md →</a>
+</div>

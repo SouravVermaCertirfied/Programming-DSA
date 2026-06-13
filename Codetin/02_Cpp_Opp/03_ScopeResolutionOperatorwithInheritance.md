@@ -92,3 +92,9 @@ class Copier : public Scanner, public Printer {
 | **Virtual Inheritance** | When multiple paths lead back to the same common base class (Diamond Problem). |
 
 Are you currently troubleshooting a specific compiler error related to inheritance, or are you designing a class hierarchy from scratch?
+
+---
+<div style="display: flex; justify-content: space-between;">
+    <a href="03_ScopeResolutionOperator.md">← 03_ScopeResolutionOperator.md</a>
+    <a href="05_Constructors.md">05_Constructors.md →</a>
+</div>

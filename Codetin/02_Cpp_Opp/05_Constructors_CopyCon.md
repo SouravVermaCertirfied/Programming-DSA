@@ -1,4 +1,3 @@
-
 # What is a Copy Constructor?
 
 A copy constructor is a member function that initializes an object using another object of the same class. Its signature looks like this:
@@ -104,3 +103,9 @@ It isn't just triggered when you think! It happens in three specific scenarios:
 
 **Q: Can I "disable" copying?**
 **A:** Yes! In modern C++, you can write `Person(const Person &other) = delete;`. This is useful for unique objects (like a Database connection) that should never be cloned.
+
+---
+<div style="display: flex; justify-content: space-between;">
+    <a href="05_Constructors.md">← 05_Constructors.md</a>
+    <a href="07_OverridingAndVirtualKeyword.md">07_OverridingAndVirtualKeyword.md →</a>
+</div>

@@ -61,3 +61,9 @@ std::cout << "Direct access";
 If a class inherits from two different classes that happen to have a function with the same name, you must use the scope resolution operator to specify which parent's function you want to call.
 
 ---
+
+---
+<div style="display: flex; justify-content: space-between;">
+    <a href="02_AccessModifiers.md">← 02_AccessModifiers.md</a>
+    <a href="03_ScopeResolutionOperatorwithInheritance.md">03_ScopeResolutionOperatorwithInheritance.md →</a>
+</div>

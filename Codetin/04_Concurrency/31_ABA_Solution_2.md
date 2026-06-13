@@ -1,4 +1,3 @@
-
 ### 2. Hazard Pointers (Memory Safety)
 In this approach, we solve ABA by ensuring that a node cannot be freed (and thus reused as "A" again) if any other thread is currently pointing at it.
 
@@ -62,3 +61,9 @@ int main() {
 ```
 
 ---
+
+---
+<div style="display: flex; justify-content: space-between;">
+    <a href="31_ABA_Solution_1.md">← 31_ABA_Solution_1.md</a>
+    <a href="31_ABA_Solution_3.md">31_ABA_Solution_3.md →</a>
+</div>

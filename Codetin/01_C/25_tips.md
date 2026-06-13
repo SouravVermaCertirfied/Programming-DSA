@@ -17,4 +17,8 @@ unsigned int x = 1U << 31; // Safe and well-defined
 - you CAN initilize the default values for a `struct` in CPP. Only for C++ v11 plus.
 - you class you can always do it in, ofcorse in CPP.
 
-
+---
+<div style="display: flex; justify-content: space-between;">
+    <a href="25_tips2.md">← 25_tips2.md</a>
+    
+</div>

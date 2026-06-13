@@ -37,3 +37,9 @@ Bottom Half (Tasklet/SoftIRQ/WorkQueue): Defer the actual processing of the data
 
 Outcome: Since the "Bottom Half" runs in a thread-like context, it can safely wait for a mutex without hanging the entire interrupt system.
 ```
+
+---
+<div style="display: flex; justify-content: space-between;">
+    <a href="00_MultiThreading.md">← 00_MultiThreading.md</a>
+    <a href="10_ThreadVsProcess.md">10_ThreadVsProcess.md →</a>
+</div>

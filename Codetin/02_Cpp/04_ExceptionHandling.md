@@ -144,4 +144,8 @@ int main() {
 ```
 </details>
 
-
+---
+<div style="display: flex; justify-content: space-between;">
+    <a href="03_Static_with_Classes.md">← 03_Static_with_Classes.md</a>
+    <a href="04_ExceptionHandlingUserDefined.md">04_ExceptionHandlingUserDefined.md →</a>
+</div>

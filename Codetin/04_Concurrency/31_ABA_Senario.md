@@ -1,4 +1,3 @@
-
 ## What is the ABA Problem?
 The ABA problem occurs during a **Compare-and-Swap (CAS)** operation. It happens when a thread reads a value $A$, a second thread changes that value to $B$ and then back to $A$, and the first thread finishes its work, sees $A$ again, and assumes nothing has changed.
 
@@ -126,3 +125,8 @@ The ABA problem is notoriously tricky because it’s a logic error, not a syntax
 
 Here is how you would implement the three primary solutions in C.
 
+---
+<div style="display: flex; justify-content: space-between;">
+    <a href="30_ThreadSafeDataStructure.md">← 30_ThreadSafeDataStructure.md</a>
+    <a href="31_ABA_Solution_0.md">31_ABA_Solution_0.md →</a>
+</div>

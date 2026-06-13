@@ -138,3 +138,9 @@ Ready to test your knowledge? Imagine you are building a **Music Streaming App**
 1.  **Library:** `std::vector<std::_______<Song>>`
 2.  **Playlist:** `std::vector<std::_______<Song>>`
 3.  **Current Song in Player:** `std::_______<Song>`
+
+---
+<div style="display: flex; justify-content: space-between;">
+    <a href="05_SmartPointers.md">← 05_SmartPointers.md</a>
+    <a href="06_Templates.md">06_Templates.md →</a>
+</div>

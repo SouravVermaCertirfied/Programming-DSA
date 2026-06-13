@@ -15,3 +15,9 @@ int main()
     return 0;
 }
 ```
+
+---
+<div style="display: flex; justify-content: space-between;">
+    <a href="22_Enum.md">← 22_Enum.md</a>
+    <a href="25_tips2.md">25_tips2.md →</a>
+</div>

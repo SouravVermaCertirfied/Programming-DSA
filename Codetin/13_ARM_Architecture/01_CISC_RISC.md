@@ -83,3 +83,9 @@ The "Disaster" I alluded to in the previous question is **Latency**.
 3. **The ARM Strategy:** By forcing a "Load/Store" mindset, ARM encourages developers to load data into registers **once**, do all the heavy lifting there, and only store it back when finished. This keeps the "assembly line" (the pipeline) moving at top speed.
 
 ---
+
+---
+<div style="display: flex; justify-content: space-between;">
+    <a href="00_Content.md">← 00_Content.md</a>
+    
+</div>

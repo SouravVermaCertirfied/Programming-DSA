@@ -29,3 +29,9 @@ This table shows how the access level of a member in the **Parent Class** is tra
 *   **Protected Inheritance:** Rarely used. It "hides" the parent's public interface from the outside world but keeps it available for future generations (grandchild classes).
 *   **Private Inheritance (`implemented-in-terms-of`):** The most restrictive. It turns all inherited public/protected members into private members of the child. This effectively "stops" the inheritance chain; the grandchild class will have no access to the original parent's members.
 *   **The "Private" Rule:** Regardless of the inheritance type, **Private** members of a parent are **never** directly accessible to a child class. They are inherited (they exist in memory), but the child cannot "see" them.
+
+---
+<div style="display: flex; justify-content: space-between;">
+    <a href="01_Pillars.md">← 01_Pillars.md</a>
+    <a href="03_ScopeResolutionOperator.md">03_ScopeResolutionOperator.md →</a>
+</div>

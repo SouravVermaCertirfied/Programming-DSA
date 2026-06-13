@@ -47,4 +47,8 @@ for( int &x : vect) // x is the alias of variable
 ```
 </details>
 
-
+---
+<div style="display: flex; justify-content: space-between;">
+    <span></span>
+    <a href="02_FriendKeyword.md">02_FriendKeyword.md →</a>
+</div>

@@ -197,3 +197,9 @@ int main() {
 | `atomic_fetch_xor`               | `type atomic_fetch_xor(volatile atomic_type *object, type operand);`                               | Atomic bitwise XOR               | Atomically performs bitwise XOR with operand; returns previous value.                                        |
 | `atomic_compare_exchange_strong` | `bool atomic_compare_exchange_strong(volatile atomic_type *object, type *expected, type desired);` | Atomic compare and swap (strong) | Atomically compares the object with *expected*; if equal, replaces with desired. Returns true if successful. |
 | `atomic_compare_exchange_weak`   | `bool atomic_compare_exchange_weak(volatile atomic_type *object, type *expected, type desired);`   | Atomic compare and swap (weak)   | Like strong, but may fail spuriously (used in loops).                                                        |
+
+---
+<div style="display: flex; justify-content: space-between;">
+    <a href="05_QuestionBank.md">← 05_QuestionBank.md</a>
+    <a href="06_Functions.md">06_Functions.md →</a>
+</div>

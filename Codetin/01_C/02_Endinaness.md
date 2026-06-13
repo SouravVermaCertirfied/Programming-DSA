@@ -58,3 +58,8 @@ int main() {
 
 ```
 
+---
+<div style="display: flex; justify-content: space-between;">
+    <a href="02_DataTypes.md">← 02_DataTypes.md</a>
+    <a href="03_MemoryAllocationOfC.md">03_MemoryAllocationOfC.md →</a>
+</div>

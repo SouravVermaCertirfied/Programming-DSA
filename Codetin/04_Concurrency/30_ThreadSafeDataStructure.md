@@ -1,4 +1,3 @@
-
 To make a data structure thread-safe in C, you have to manually implement synchronization using libraries like **POSIX Threads (pthreads)** on Linux/Unix or **Windows Threads**.
 
 ---
@@ -48,3 +47,9 @@ When building **lock-free** structures in C (like a lock-free stack), you'll oft
 Here is a breakdown of why this happens and how locks act as a natural "shield" against it.
 
 ---
+
+---
+<div style="display: flex; justify-content: space-between;">
+    <a href="26_Spinlocks.md">← 26_Spinlocks.md</a>
+    <a href="31_ABA_Senario.md">31_ABA_Senario.md →</a>
+</div>

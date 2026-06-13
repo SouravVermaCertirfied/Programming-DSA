@@ -34,3 +34,9 @@ Hello World
 13 100 101 102 103
 14 100 101 102 103
 ```
+
+---
+<div style="display: flex; justify-content: space-between;">
+    <a href="19_variadic.md">← 19_variadic.md</a>
+    <a href="21_inline.md">21_inline.md →</a>
+</div>

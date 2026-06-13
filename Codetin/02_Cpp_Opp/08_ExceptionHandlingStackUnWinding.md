@@ -6,4 +6,10 @@ When an exception is thrown in C++, the program starts unwinding the stack to fi
 During this process:
 - Functions in the call stack are popped off one by one.  
 - The destructors of objects in these functions are executed to release resources.  
-- If no matching catch block is found, the program terminates.  
+- If no matching catch block is found, the program terminates.
+
+---
+<div style="display: flex; justify-content: space-between;">
+    <a href="07_OverridingAndVirtualKeyword.md">← 07_OverridingAndVirtualKeyword.md</a>
+    
+</div>

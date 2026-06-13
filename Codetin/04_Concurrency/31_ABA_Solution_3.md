@@ -120,3 +120,9 @@ int main() {
 * **Use Tagged Pointers** if you are on x86_64 or ARM64 and your compiler supports `__int128` atomics. It’s the fastest and cleanest.
 * **Use Hazard Pointers** if memory is extremely tight and you need to free it the *second* it’s no longer used.
 * **Use Epochs** for high-performance systems (like Linux kernel RCU or high-end databases) where you want the lowest possible overhead on the "fast path."
+
+---
+<div style="display: flex; justify-content: space-between;">
+    <a href="31_ABA_Solution_2.md">← 31_ABA_Solution_2.md</a>
+    <a href="60_CodingQuestionConcepts.md">60_CodingQuestionConcepts.md →</a>
+</div>

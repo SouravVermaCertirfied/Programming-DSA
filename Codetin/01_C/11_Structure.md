@@ -115,3 +115,9 @@ To embed `struct Foo obj;`, the compiler must know:
 - how big `Foo` is
 - how to lay it out in memory
 - But struct `Foo` is not fully defined yet → ❌ error.
+
+---
+<div style="display: flex; justify-content: space-between;">
+    <a href="09_PointersQB.md">← 09_PointersQB.md</a>
+    <a href="12_Strings.md">12_Strings.md →</a>
+</div>

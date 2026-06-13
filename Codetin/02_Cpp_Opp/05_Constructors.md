@@ -114,3 +114,9 @@ class Child : public Father {
 1.  **Required for `const` and `&`**: `const` variables and references *must* be initialized when created; they cannot be assigned values later inside `{}`.
 2.  **Avoids Default Constructor Calls**: Without an initializer list, C++ calls the default constructor for all member objects first. The list bypasses this, saving CPU cycles.
 3.  **Base Class Control**: It allows a derived class to "reach up" and provide necessary data to its parent and grandparent classes.
+
+---
+<div style="display: flex; justify-content: space-between;">
+    <a href="03_ScopeResolutionOperatorwithInheritance.md">← 03_ScopeResolutionOperatorwithInheritance.md</a>
+    <a href="05_Constructors_CopyCon.md">05_Constructors_CopyCon.md →</a>
+</div>

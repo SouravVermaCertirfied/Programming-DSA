@@ -79,3 +79,9 @@ Feel free to copy the above content into a `.md` file for use.
 </p>
 
 ![Space Logo](https://github.com/vaaski/vaaski/blob/main/space-logo.svg)
+
+---
+<div style="display: flex; justify-content: space-between;">
+    <a href="htmltable.md">← htmltable.md</a>
+    <a href="reseachpaper.md">reseachpaper.md →</a>
+</div>

@@ -74,3 +74,9 @@ Modern processors (ARM, RISC-V, etc.) extend JTAG to provide real-time debugging
 1. **Check the BYPASS register:** Force the first two devices into BYPASS mode (length = 1 bit). If you still can't reach the 3rd device, the issue is between $TDO_{2}$ and $TDI_{3}$.
 2. **Check TCK/TMS Integrity:** Since these are shared across all devices, a reflection or signal integrity issue at the end of the long trace often causes the later devices to lose synchronization.
 3. **The "High-Z" Trap:** If the $TDO$ of a device is stuck in High-Impedance, the line will float, leading to constant 1s or 0s.
+
+---
+<div style="display: flex; justify-content: space-between;">
+    <a href="06_DMA.md">← 06_DMA.md</a>
+    <a href="08_Ethernet.md">08_Ethernet.md →</a>
+</div>

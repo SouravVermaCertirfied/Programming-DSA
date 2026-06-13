@@ -20,3 +20,9 @@ Following methods can be used:
 
 
 ### using `scanf`
+
+---
+<div style="display: flex; justify-content: space-between;">
+    <a href="11_Structure.md">← 11_Structure.md</a>
+    <a href="14_strcpy_strcmp.md">14_strcpy_strcmp.md →</a>
+</div>

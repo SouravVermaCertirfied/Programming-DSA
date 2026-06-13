@@ -54,3 +54,9 @@
 - extern inline semantics are tricky and compiler-dependent (especially GCC vs MSVC).
 - It can lead to linker errors if the external definition is missing.
 - Rarely needed in embedded unless you want a single external function symbol with optional inlining.
+
+---
+<div style="display: flex; justify-content: space-between;">
+    <a href="20_break.md">← 20_break.md</a>
+    <a href="22_Enum.md">22_Enum.md →</a>
+</div>

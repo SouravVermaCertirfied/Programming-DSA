@@ -46,3 +46,9 @@ fuel -= 45;
 pthread_mutex_unlock(&lock);
 
 ```
+
+---
+<div style="display: flex; justify-content: space-between;">
+    <a href="24_SemphoresVsMutex.md">← 24_SemphoresVsMutex.md</a>
+    <a href="26_Spinlocks.md">26_Spinlocks.md →</a>
+</div>

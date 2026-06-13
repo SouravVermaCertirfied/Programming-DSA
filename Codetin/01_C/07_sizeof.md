@@ -151,3 +151,9 @@ int main(){
     my_sizeof_type(int);
 }
 ```
+
+---
+<div style="display: flex; justify-content: space-between;">
+    <a href="06_Functions.md">← 06_Functions.md</a>
+    <a href="09_Pointers.md">09_Pointers.md →</a>
+</div>

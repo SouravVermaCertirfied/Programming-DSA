@@ -37,3 +37,9 @@ These patterns are specifically concerned with communication between objects.
 
 Mastering the **Singleton**, **Factory**, and **Observer** patterns first.  
 They appear in almost every modern framework (like React, Spring, or .NET) and provide the quickest "aha!" moments for understanding why patterns matter.
+
+---
+<div style="display: flex; justify-content: space-between;">
+    <span></span>
+    <a href="02_Singleton.md">02_Singleton.md →</a>
+</div>

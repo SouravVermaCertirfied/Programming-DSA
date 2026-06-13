@@ -86,3 +86,9 @@ int main() {
 
 ```
 </details>
+
+---
+<div style="display: flex; justify-content: space-between;">
+    <a href="04_ExceptionHandling.md">← 04_ExceptionHandling.md</a>
+    <a href="05_SmartPointers.md">05_SmartPointers.md →</a>
+</div>

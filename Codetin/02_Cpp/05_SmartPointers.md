@@ -63,3 +63,9 @@ The "observer." A `weak_ptr` points to a resource managed by a `shared_ptr` but 
 > **Use `std::unique_ptr` by default.** Only upgrade to `std::shared_ptr` if you genuinely need multiple owners for the same piece of data.
 
 How comfortable are you with the concept of "ownership" in C++, or should we dive into a code example showing a circular dependency leak?
+
+---
+<div style="display: flex; justify-content: space-between;">
+    <a href="04_ExceptionHandlingUserDefined.md">← 04_ExceptionHandlingUserDefined.md</a>
+    <a href="05_SmartPointers_CircularWait.md">05_SmartPointers_CircularWait.md →</a>
+</div>

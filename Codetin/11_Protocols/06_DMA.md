@@ -358,3 +358,9 @@ wait_for_interrupt();
 # 15. One-Line Staff-Level Summary
 
 > DMA allows devices to perform high-bandwidth memory transfers by becoming bus masters and using mechanisms like scatter-gather descriptors, IOMMU address translation, and pinned memory while managing cache coherency.
+
+---
+<div style="display: flex; justify-content: space-between;">
+    <a href="05_UART.md">← 05_UART.md</a>
+    <a href="07_JTAG.md">07_JTAG.md →</a>
+</div>

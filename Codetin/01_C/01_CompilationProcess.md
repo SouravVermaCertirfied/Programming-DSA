@@ -9,3 +9,8 @@
 
 <img src="https://raw.githubusercontent.com/SouravVermaCertirfied/Programming-DSA/refs/heads/main/Codetin/1_C/img/C_CompilationProcess.png" alt="My Image" style="max-width: 500px; height: auto;">
 
+---
+<div style="display: flex; justify-content: space-between;">
+    <a href="00_CLang.md">← 00_CLang.md</a>
+    <a href="02_DataTypes.md">02_DataTypes.md →</a>
+</div>

@@ -81,3 +81,9 @@ int main(){
     return 0;
 }
 ```
+
+---
+<div style="display: flex; justify-content: space-between;">
+    <a href="20_Mutex.md">← 20_Mutex.md</a>
+    <a href="22_Semaphores.md">22_Semaphores.md →</a>
+</div>

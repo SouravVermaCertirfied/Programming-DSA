@@ -114,3 +114,9 @@ Future work includes extending the model to support video stylization and user-c
 3. Huang, X., & Belongie, S. (2017). Arbitrary Style Transfer in Real-Time with Adaptive Instance Normalization. *ICCV*
 
 </details>
+
+---
+<div style="display: flex; justify-content: space-between;">
+    <a href="newantoer.md">← newantoer.md</a>
+    <a href="tables.md">tables.md →</a>
+</div>

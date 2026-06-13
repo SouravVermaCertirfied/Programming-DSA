@@ -68,3 +68,9 @@ To make a class a true Singleton, you must:
 Singletons are often called an "anti-pattern" if overused. Because they are globally accessible, they can make **Unit Testing** difficult (since they maintain state between tests) and can hide dependencies between classes. Use them when you are *certain* there should only ever be one of something.
 
 Would you like to see how we could make this Singleton "Thread Safe" in older versions of C++, or should we move on to the **Factory** pattern?
+
+---
+<div style="display: flex; justify-content: space-between;">
+    <a href="01_DesignPatterns.md">← 01_DesignPatterns.md</a>
+    <a href="03_Factory.md">03_Factory.md →</a>
+</div>

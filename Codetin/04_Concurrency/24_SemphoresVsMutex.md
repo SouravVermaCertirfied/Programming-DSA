@@ -41,3 +41,8 @@
 | Spurious wakeups     | Yes                | No        |
 | Expressiveness       | Higher             | Lower     |
 
+---
+<div style="display: flex; justify-content: space-between;">
+    <a href="22_Semaphores.md">← 22_Semaphores.md</a>
+    <a href="25_SpuriousAwake.md">25_SpuriousAwake.md →</a>
+</div>

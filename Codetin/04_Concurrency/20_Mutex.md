@@ -123,3 +123,9 @@ int main() {
 }
 
 ```
+
+---
+<div style="display: flex; justify-content: space-between;">
+    <a href="12_PriorityInversion.md">← 12_PriorityInversion.md</a>
+    <a href="21_ConditionVariables.md">21_ConditionVariables.md →</a>
+</div>

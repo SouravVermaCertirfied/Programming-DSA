@@ -71,3 +71,9 @@ int main() {
 ```
 
 ---
+
+---
+<div style="display: flex; justify-content: space-between;">
+    <a href="31_ABA_Solution_0.md">← 31_ABA_Solution_0.md</a>
+    <a href="31_ABA_Solution_2.md">31_ABA_Solution_2.md →</a>
+</div>

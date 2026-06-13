@@ -79,3 +79,9 @@ To prevent buffer overflows (when data is sent faster than it can be processed),
 * **Baud Rate Mismatch:** If the internal oscillators of the two devices differ by more than **3%**, the data will become corrupted.
 * **Logic Levels:** UART is a protocol, not a voltage standard. While microcontrollers use TTL levels (0V/3.3V or 0V/5V), RS-232 uses negative/positive swings (-12V/+12V). Connecting TTL to RS-232 directly will destroy the hardware.
 * **Half-Duplex vs. Full-Duplex:** Standard UART is full-duplex, but RS-485 (a common UART-based industrial standard) is often half-duplex.
+
+---
+<div style="display: flex; justify-content: space-between;">
+    <a href="04_SPI.md">← 04_SPI.md</a>
+    <a href="06_DMA.md">06_DMA.md →</a>
+</div>

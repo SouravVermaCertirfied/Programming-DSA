@@ -79,3 +79,9 @@ There are two primary ways to connect multiple Targets to a single Controller:
 * **Power:** Since it uses push-pull CMOS outputs, it generally consumes more power during high-speed switching than I2C's open-drain setup.
 
 Do you need a breakdown of a specific SPI mode for a driver you are writing, or are you comparing these for a hardware selection?
+
+---
+<div style="display: flex; justify-content: space-between;">
+    <a href="02_I2C.md">← 02_I2C.md</a>
+    <a href="05_UART.md">05_UART.md →</a>
+</div>

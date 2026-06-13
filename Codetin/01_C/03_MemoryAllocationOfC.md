@@ -107,3 +107,9 @@ void task_function(int param) {
 | **Heap**              | `malloc()` / `free()` dynamic allocation          | Managed by runtime/RTOS allocator. Use with care in real-time systems due to fragmentation and timing.          |
 | **Stack**             | `local_variable`, `stack_var`                     | Each task/thread has its own stack for locals, parameters, return addresses.                                    |
 | **Memory-Mapped I/O** | `PERIPHERAL_REG` macro simulating hardware access | Accesses special peripheral register; volatile prevents optimization. Requires careful handling in RTOS.        |
+
+---
+<div style="display: flex; justify-content: space-between;">
+    <a href="02_Endinaness.md">← 02_Endinaness.md</a>
+    <a href="04_StorageClasses.md">04_StorageClasses.md →</a>
+</div>

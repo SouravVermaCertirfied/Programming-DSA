@@ -78,3 +78,9 @@ ptr->speak();
 - There are other ways but lets not focus on them for now:
     - `std::variant` and `std::visit` (Sum Types)
     - `std::function` and Type Erasure
+
+---
+<div style="display: flex; justify-content: space-between;">
+    <a href="08_NewDeleteKeyword.md">← 08_NewDeleteKeyword.md</a>
+    
+</div>

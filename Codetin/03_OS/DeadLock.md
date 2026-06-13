@@ -94,3 +94,9 @@ int main(){
 Break one of the deadlock condition.
 
 ## Deadlock Detection And Recovery
+
+---
+<div style="display: flex; justify-content: space-between;">
+    <a href="00_OSthingsToLearn.md">← 00_OSthingsToLearn.md</a>
+    <a href="fragmentation.md">fragmentation.md →</a>
+</div>

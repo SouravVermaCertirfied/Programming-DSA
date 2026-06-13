@@ -100,3 +100,9 @@ void retire_node(Node* n) {
 | **Epoch Reclamation** | High | Very High | High-throughput systems where memory latency matters. |
 
 Which of these approaches feels most applicable to the architecture you're currently working with?
+
+---
+<div style="display: flex; justify-content: space-between;">
+    <a href="31_ABA_Senario.md">← 31_ABA_Senario.md</a>
+    <a href="31_ABA_Solution_1.md">31_ABA_Solution_1.md →</a>
+</div>

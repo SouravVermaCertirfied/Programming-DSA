@@ -7,3 +7,9 @@
 | **Day 5** | Advanced Concurrency        | Atomic memory ordering, false sharing, priority inversion                                                    | Atomic counter; acquire/release flag example                                   | Knowing when atomics are insufficient                       |
 | **Day 6** | Thread Pool & Deadlocks     | Lock ordering, deadlock prevention, graceful shutdown                                                        | Implement fixed thread pool; identify & fix deadlocks                          | Proving deadlock-free designs                               |
 | **Day 7** | Mock IV & Review     | Review all concepts, trade-offs, best practices                                                              | Solve problems without notes; debug broken concurrent code                     | Clear explanations > perfect code                           |
+
+---
+<div style="display: flex; justify-content: space-between;">
+    <span></span>
+    <a href="00_MultiThreading.md">00_MultiThreading.md →</a>
+</div>
