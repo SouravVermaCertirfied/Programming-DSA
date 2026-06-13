@@ -36,7 +36,5 @@ Hello World
 ```
 
 ---
-<div style="display: flex; justify-content: space-between;">
-    <a href="19_variadic.md">← 19_variadic.md</a>
-    <a href="21_inline.md">21_inline.md →</a>
-</div>
+<p align="left"><a href="19_variadic.md">← 19_variadic.md</a></p>
+<p align="right" style="margin-top:-2.4em;"><a href="21_inline.md">21_inline.md →</a></p>

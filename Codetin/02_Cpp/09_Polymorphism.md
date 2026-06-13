@@ -80,7 +80,5 @@ ptr->speak();
     - `std::function` and Type Erasure
 
 ---
-<div style="display: flex; justify-content: space-between;">
-    <a href="08_NewDeleteKeyword.md">← 08_NewDeleteKeyword.md</a>
-    
-</div>
+<p align="left"><a href="08_NewDeleteKeyword.md">← 08_NewDeleteKeyword.md</a></p>
+<p align="right" style="margin-top:-2.4em;"></p>

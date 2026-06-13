@@ -17,7 +17,5 @@ int main()
 ```
 
 ---
-<div style="display: flex; justify-content: space-between;">
-    <a href="22_Enum.md">← 22_Enum.md</a>
-    <a href="25_tips2.md">25_tips2.md →</a>
-</div>
+<p align="left"><a href="22_Enum.md">← 22_Enum.md</a></p>
+<p align="right" style="margin-top:-2.4em;"><a href="25_tips2.md">25_tips2.md →</a></p>

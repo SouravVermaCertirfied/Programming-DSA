@@ -105,7 +105,5 @@ It isn't just triggered when you think! It happens in three specific scenarios:
 **A:** Yes! In modern C++, you can write `Person(const Person &other) = delete;`. This is useful for unique objects (like a Database connection) that should never be cloned.
 
 ---
-<div style="display: flex; justify-content: space-between;">
-    <a href="05_Constructors.md">← 05_Constructors.md</a>
-    <a href="07_OverridingAndVirtualKeyword.md">07_OverridingAndVirtualKeyword.md →</a>
-</div>
+<p align="left"><a href="05_Constructors.md">← 05_Constructors.md</a></p>
+<p align="right" style="margin-top:-2.4em;"><a href="07_OverridingAndVirtualKeyword.md">07_OverridingAndVirtualKeyword.md →</a></p>

@@ -17,7 +17,5 @@
 8. Dining Philosophers , Sleeping Barber , Readers–Writers Problem
 
 ---
-<div style="display: flex; justify-content: space-between;">
-    <a href="31_ABA_Solution_3.md">← 31_ABA_Solution_3.md</a>
-    <a href="60_threadPool.md">60_threadPool.md →</a>
-</div>
+<p align="left"><a href="31_ABA_Solution_3.md">← 31_ABA_Solution_3.md</a></p>
+<p align="right" style="margin-top:-2.4em;"><a href="60_threadPool.md">60_threadPool.md →</a></p>

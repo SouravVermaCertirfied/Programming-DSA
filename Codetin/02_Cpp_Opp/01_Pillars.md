@@ -8,7 +8,5 @@ The four pillars of OOP are the fundamental principles used to structure code in
 *   **Encapsulation:** Bundling data and methods into a single unit (class) while restricting direct access to internal state via access modifiers.
 
 ---
-<div style="display: flex; justify-content: space-between;">
-    <span></span>
-    <a href="02_AccessModifiers.md">02_AccessModifiers.md →</a>
-</div>
+<p align="left"></p>
+<p align="right" style="margin-top:-2.4em;"><a href="02_AccessModifiers.md">02_AccessModifiers.md →</a></p>

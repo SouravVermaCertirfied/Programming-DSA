@@ -10,7 +10,5 @@ Explanation: `const` tells the compiler that the programmer should not attempt t
 ###
 
 ---
-<div style="display: flex; justify-content: space-between;">
-    <a href="04_StorageClasses.md">← 04_StorageClasses.md</a>
-    <a href="05_TypeQualifiers.md">05_TypeQualifiers.md →</a>
-</div>
+<p align="left"><a href="04_StorageClasses.md">← 04_StorageClasses.md</a></p>
+<p align="right" style="margin-top:-2.4em;"><a href="05_TypeQualifiers.md">05_TypeQualifiers.md →</a></p>

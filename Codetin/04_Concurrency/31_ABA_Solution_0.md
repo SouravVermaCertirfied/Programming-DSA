@@ -102,7 +102,5 @@ void retire_node(Node* n) {
 Which of these approaches feels most applicable to the architecture you're currently working with?
 
 ---
-<div style="display: flex; justify-content: space-between;">
-    <a href="31_ABA_Senario.md">← 31_ABA_Senario.md</a>
-    <a href="31_ABA_Solution_1.md">31_ABA_Solution_1.md →</a>
-</div>
+<p align="left"><a href="31_ABA_Senario.md">← 31_ABA_Senario.md</a></p>
+<p align="right" style="margin-top:-2.4em;"><a href="31_ABA_Solution_1.md">31_ABA_Solution_1.md →</a></p>

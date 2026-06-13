@@ -65,7 +65,5 @@ The "observer." A `weak_ptr` points to a resource managed by a `shared_ptr` but 
 How comfortable are you with the concept of "ownership" in C++, or should we dive into a code example showing a circular dependency leak?
 
 ---
-<div style="display: flex; justify-content: space-between;">
-    <a href="04_ExceptionHandlingUserDefined.md">← 04_ExceptionHandlingUserDefined.md</a>
-    <a href="05_SmartPointers_CircularWait.md">05_SmartPointers_CircularWait.md →</a>
-</div>
+<p align="left"><a href="04_ExceptionHandlingUserDefined.md">← 04_ExceptionHandlingUserDefined.md</a></p>
+<p align="right" style="margin-top:-2.4em;"><a href="05_SmartPointers_CircularWait.md">05_SmartPointers_CircularWait.md →</a></p>

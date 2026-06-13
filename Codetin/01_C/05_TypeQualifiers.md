@@ -199,7 +199,5 @@ int main() {
 | `atomic_compare_exchange_weak`   | `bool atomic_compare_exchange_weak(volatile atomic_type *object, type *expected, type desired);`   | Atomic compare and swap (weak)   | Like strong, but may fail spuriously (used in loops).                                                        |
 
 ---
-<div style="display: flex; justify-content: space-between;">
-    <a href="05_QuestionBank.md">← 05_QuestionBank.md</a>
-    <a href="06_Functions.md">06_Functions.md →</a>
-</div>
+<p align="left"><a href="05_QuestionBank.md">← 05_QuestionBank.md</a></p>
+<p align="right" style="margin-top:-2.4em;"><a href="06_Functions.md">06_Functions.md →</a></p>

@@ -94,7 +94,5 @@ class Copier : public Scanner, public Printer {
 Are you currently troubleshooting a specific compiler error related to inheritance, or are you designing a class hierarchy from scratch?
 
 ---
-<div style="display: flex; justify-content: space-between;">
-    <a href="03_ScopeResolutionOperator.md">← 03_ScopeResolutionOperator.md</a>
-    <a href="05_Constructors.md">05_Constructors.md →</a>
-</div>
+<p align="left"><a href="03_ScopeResolutionOperator.md">← 03_ScopeResolutionOperator.md</a></p>
+<p align="right" style="margin-top:-2.4em;"><a href="05_Constructors.md">05_Constructors.md →</a></p>

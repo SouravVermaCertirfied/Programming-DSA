@@ -51,7 +51,5 @@ To truly test your **Definition of Done**, you need to move past definitions and
 **Which of these four sections felt the most difficult for you just now?**
 
 ---
-<div style="display: flex; justify-content: space-between;">
-    <span></span>
-    <a href="specificQuestions.md">specificQuestions.md →</a>
-</div>
+<p align="left"></p>
+<p align="right" style="margin-top:-2.4em;"><a href="specificQuestions.md">specificQuestions.md →</a></p>

@@ -70,7 +70,5 @@ Singletons are often called an "anti-pattern" if overused. Because they are glob
 Would you like to see how we could make this Singleton "Thread Safe" in older versions of C++, or should we move on to the **Factory** pattern?
 
 ---
-<div style="display: flex; justify-content: space-between;">
-    <a href="01_DesignPatterns.md">← 01_DesignPatterns.md</a>
-    <a href="03_Factory.md">03_Factory.md →</a>
-</div>
+<p align="left"><a href="01_DesignPatterns.md">← 01_DesignPatterns.md</a></p>
+<p align="right" style="margin-top:-2.4em;"><a href="03_Factory.md">03_Factory.md →</a></p>

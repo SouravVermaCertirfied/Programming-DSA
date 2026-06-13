@@ -63,7 +63,5 @@ int main(){
 ```
 
 ---
-<div style="display: flex; justify-content: space-between;">
-    <a href="00_Content.md">← 00_Content.md</a>
-    <a href="00_QuestionBank.md">00_QuestionBank.md →</a>
-</div>
+<p align="left"><a href="00_Content.md">← 00_Content.md</a></p>
+<p align="right" style="margin-top:-2.4em;"><a href="00_QuestionBank.md">00_QuestionBank.md →</a></p>

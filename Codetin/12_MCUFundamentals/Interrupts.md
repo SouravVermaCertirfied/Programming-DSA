@@ -125,7 +125,5 @@ Address        Entry
 ---
 
 ---
-<div style="display: flex; justify-content: space-between;">
-    <a href="CPU.md">← CPU.md</a>
-    <a href="timersAndClock.md">timersAndClock.md →</a>
-</div>
+<p align="left"><a href="CPU.md">← CPU.md</a></p>
+<p align="right" style="margin-top:-2.4em;"><a href="timersAndClock.md">timersAndClock.md →</a></p>

@@ -141,7 +141,5 @@ int main() {
 No. It’s non-reentrant and can cause a Deadlock if the main thread was already in a `malloc` call.
 
 ---
-<div style="display: flex; justify-content: space-between;">
-    <a href="15_memcpy.md">← 15_memcpy.md</a>
-    <a href="19_variadic.md">19_variadic.md →</a>
-</div>
+<p align="left"><a href="15_memcpy.md">← 15_memcpy.md</a></p>
+<p align="right" style="margin-top:-2.4em;"><a href="19_variadic.md">19_variadic.md →</a></p>

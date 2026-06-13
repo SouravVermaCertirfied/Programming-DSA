@@ -155,7 +155,5 @@ int main(){
 ```
 
 ---
-<div style="display: flex; justify-content: space-between;">
-    <a href="05_TypeQualifiers.md">← 05_TypeQualifiers.md</a>
-    <a href="07_sizeof.md">07_sizeof.md →</a>
-</div>
+<p align="left"><a href="05_TypeQualifiers.md">← 05_TypeQualifiers.md</a></p>
+<p align="right" style="margin-top:-2.4em;"><a href="07_sizeof.md">07_sizeof.md →</a></p>

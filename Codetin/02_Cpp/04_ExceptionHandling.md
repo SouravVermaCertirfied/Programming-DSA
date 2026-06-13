@@ -145,7 +145,5 @@ int main() {
 </details>
 
 ---
-<div style="display: flex; justify-content: space-between;">
-    <a href="03_Static_with_Classes.md">← 03_Static_with_Classes.md</a>
-    <a href="04_ExceptionHandlingUserDefined.md">04_ExceptionHandlingUserDefined.md →</a>
-</div>
+<p align="left"><a href="03_Static_with_Classes.md">← 03_Static_with_Classes.md</a></p>
+<p align="right" style="margin-top:-2.4em;"><a href="04_ExceptionHandlingUserDefined.md">04_ExceptionHandlingUserDefined.md →</a></p>

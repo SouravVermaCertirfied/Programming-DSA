@@ -251,7 +251,5 @@ printf("%s", c2.name);
 ```
 
 ---
-<div style="display: flex; justify-content: space-between;">
-    <a href="14_strcpy_strcmp.md">← 14_strcpy_strcmp.md</a>
-    <a href="16_malloc_calloc_realloc.md">16_malloc_calloc_realloc.md →</a>
-</div>
+<p align="left"><a href="14_strcpy_strcmp.md">← 14_strcpy_strcmp.md</a></p>
+<p align="right" style="margin-top:-2.4em;"><a href="16_malloc_calloc_realloc.md">16_malloc_calloc_realloc.md →</a></p>

@@ -91,7 +91,5 @@ is declared else where.
     ```
 
 ---
-<div style="display: flex; justify-content: space-between;">
-    <a href="03_MemoryAllocationOfC.md">← 03_MemoryAllocationOfC.md</a>
-    <a href="05_QuestionBank.md">05_QuestionBank.md →</a>
-</div>
+<p align="left"><a href="03_MemoryAllocationOfC.md">← 03_MemoryAllocationOfC.md</a></p>
+<p align="right" style="margin-top:-2.4em;"><a href="05_QuestionBank.md">05_QuestionBank.md →</a></p>

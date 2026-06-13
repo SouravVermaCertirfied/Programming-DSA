@@ -13,7 +13,5 @@ For example, if you free a small chunk of memory, but the free memory space left
 For example, if you allocate a memory block for an array of 10 integers but the system allocates 20 bytes (because of padding or alignment), you end up with unused memory within the block.
 
 ---
-<div style="display: flex; justify-content: space-between;">
-    <a href="DeadLock.md">← DeadLock.md</a>
-    <a href="Synchronization.md">Synchronization.md →</a>
-</div>
+<p align="left"><a href="DeadLock.md">← DeadLock.md</a></p>
+<p align="right" style="margin-top:-2.4em;"><a href="Synchronization.md">Synchronization.md →</a></p>

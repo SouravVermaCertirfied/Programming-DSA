@@ -98,7 +98,5 @@ p1.name[0] = 's'; // Now this is safe!
 Was there a specific part of the Stack vs. Heap logic you'd like to dive deeper into next?
 
 ---
-<div style="display: flex; justify-content: space-between;">
-    <a href="24_Arrays.md">← 24_Arrays.md</a>
-    <a href="25_tips.md">25_tips.md →</a>
-</div>
+<p align="left"><a href="24_Arrays.md">← 24_Arrays.md</a></p>
+<p align="right" style="margin-top:-2.4em;"><a href="25_tips.md">25_tips.md →</a></p>

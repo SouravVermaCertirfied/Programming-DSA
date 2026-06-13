@@ -80,7 +80,5 @@ int main() {
 | **Main Use Case** | Polymorphic behavior (e.g., Games, Plugins) | Simple code reuse/extension |
 
 ---
-<div style="display: flex; justify-content: space-between;">
-    <a href="05_Constructors_CopyCon.md">← 05_Constructors_CopyCon.md</a>
-    <a href="08_ExceptionHandlingStackUnWinding.md">08_ExceptionHandlingStackUnWinding.md →</a>
-</div>
+<p align="left"><a href="05_Constructors_CopyCon.md">← 05_Constructors_CopyCon.md</a></p>
+<p align="right" style="margin-top:-2.4em;"><a href="08_ExceptionHandlingStackUnWinding.md">08_ExceptionHandlingStackUnWinding.md →</a></p>

@@ -49,7 +49,5 @@ Here is a breakdown of why this happens and how locks act as a natural "shield" 
 ---
 
 ---
-<div style="display: flex; justify-content: space-between;">
-    <a href="26_Spinlocks.md">← 26_Spinlocks.md</a>
-    <a href="31_ABA_Senario.md">31_ABA_Senario.md →</a>
-</div>
+<p align="left"><a href="26_Spinlocks.md">← 26_Spinlocks.md</a></p>
+<p align="right" style="margin-top:-2.4em;"><a href="31_ABA_Senario.md">31_ABA_Senario.md →</a></p>

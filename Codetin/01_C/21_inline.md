@@ -56,7 +56,5 @@
 - Rarely needed in embedded unless you want a single external function symbol with optional inlining.
 
 ---
-<div style="display: flex; justify-content: space-between;">
-    <a href="20_break.md">← 20_break.md</a>
-    <a href="22_Enum.md">22_Enum.md →</a>
-</div>
+<p align="left"><a href="20_break.md">← 20_break.md</a></p>
+<p align="right" style="margin-top:-2.4em;"><a href="22_Enum.md">22_Enum.md →</a></p>

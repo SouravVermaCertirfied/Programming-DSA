@@ -17,7 +17,5 @@
 -
 
 ---
-<div style="display: flex; justify-content: space-between;">
-    <span></span>
-    <a href="DeadLock.md">DeadLock.md →</a>
-</div>
+<p align="left"></p>
+<p align="right" style="margin-top:-2.4em;"><a href="DeadLock.md">DeadLock.md →</a></p>

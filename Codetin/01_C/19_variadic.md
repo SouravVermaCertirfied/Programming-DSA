@@ -111,7 +111,5 @@ int main() {
 ```
 
 ---
-<div style="display: flex; justify-content: space-between;">
-    <a href="16_malloc_calloc_realloc.md">← 16_malloc_calloc_realloc.md</a>
-    <a href="20_break.md">20_break.md →</a>
-</div>
+<p align="left"><a href="16_malloc_calloc_realloc.md">← 16_malloc_calloc_realloc.md</a></p>
+<p align="right" style="margin-top:-2.4em;"><a href="20_break.md">20_break.md →</a></p>

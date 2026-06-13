@@ -76,7 +76,5 @@ Modern processors (ARM, RISC-V, etc.) extend JTAG to provide real-time debugging
 3. **The "High-Z" Trap:** If the $TDO$ of a device is stuck in High-Impedance, the line will float, leading to constant 1s or 0s.
 
 ---
-<div style="display: flex; justify-content: space-between;">
-    <a href="06_DMA.md">← 06_DMA.md</a>
-    <a href="08_Ethernet.md">08_Ethernet.md →</a>
-</div>
+<p align="left"><a href="06_DMA.md">← 06_DMA.md</a></p>
+<p align="right" style="margin-top:-2.4em;"><a href="08_Ethernet.md">08_Ethernet.md →</a></p>

@@ -95,7 +95,5 @@ High-priority thread: released mutex
 3. **Avoiding Blocking**: Utilizes non-blocking algorithms or designs systems to minimize shared resource usage, thereby reducing the chances of priority inversion .
 
 ---
-<div style="display: flex; justify-content: space-between;">
-    <a href="11_Deadlocks.md">← 11_Deadlocks.md</a>
-    <a href="20_Mutex.md">20_Mutex.md →</a>
-</div>
+<p align="left"><a href="11_Deadlocks.md">← 11_Deadlocks.md</a></p>
+<p align="right" style="margin-top:-2.4em;"><a href="20_Mutex.md">20_Mutex.md →</a></p>

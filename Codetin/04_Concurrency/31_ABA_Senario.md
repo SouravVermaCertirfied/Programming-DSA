@@ -126,7 +126,5 @@ The ABA problem is notoriously tricky because it’s a logic error, not a syntax
 Here is how you would implement the three primary solutions in C.
 
 ---
-<div style="display: flex; justify-content: space-between;">
-    <a href="30_ThreadSafeDataStructure.md">← 30_ThreadSafeDataStructure.md</a>
-    <a href="31_ABA_Solution_0.md">31_ABA_Solution_0.md →</a>
-</div>
+<p align="left"><a href="30_ThreadSafeDataStructure.md">← 30_ThreadSafeDataStructure.md</a></p>
+<p align="right" style="margin-top:-2.4em;"><a href="31_ABA_Solution_0.md">31_ABA_Solution_0.md →</a></p>

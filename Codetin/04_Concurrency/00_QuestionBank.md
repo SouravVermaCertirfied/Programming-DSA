@@ -39,7 +39,5 @@ Outcome: Since the "Bottom Half" runs in a thread-like context, it can safely wa
 ```
 
 ---
-<div style="display: flex; justify-content: space-between;">
-    <a href="00_MultiThreading.md">← 00_MultiThreading.md</a>
-    <a href="10_ThreadVsProcess.md">10_ThreadVsProcess.md →</a>
-</div>
+<p align="left"><a href="00_MultiThreading.md">← 00_MultiThreading.md</a></p>
+<p align="right" style="margin-top:-2.4em;"><a href="10_ThreadVsProcess.md">10_ThreadVsProcess.md →</a></p>

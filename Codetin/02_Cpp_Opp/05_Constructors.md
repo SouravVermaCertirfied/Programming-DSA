@@ -116,7 +116,5 @@ class Child : public Father {
 3.  **Base Class Control**: It allows a derived class to "reach up" and provide necessary data to its parent and grandparent classes.
 
 ---
-<div style="display: flex; justify-content: space-between;">
-    <a href="03_ScopeResolutionOperatorwithInheritance.md">← 03_ScopeResolutionOperatorwithInheritance.md</a>
-    <a href="05_Constructors_CopyCon.md">05_Constructors_CopyCon.md →</a>
-</div>
+<p align="left"><a href="03_ScopeResolutionOperatorwithInheritance.md">← 03_ScopeResolutionOperatorwithInheritance.md</a></p>
+<p align="right" style="margin-top:-2.4em;"><a href="05_Constructors_CopyCon.md">05_Constructors_CopyCon.md →</a></p>

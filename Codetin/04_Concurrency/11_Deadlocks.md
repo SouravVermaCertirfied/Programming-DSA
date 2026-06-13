@@ -151,7 +151,5 @@ void* thread2(void* arg) {
 ```
 
 ---
-<div style="display: flex; justify-content: space-between;">
-    <a href="10_ThreadVsProcess.md">← 10_ThreadVsProcess.md</a>
-    <a href="12_PriorityInversion.md">12_PriorityInversion.md →</a>
-</div>
+<p align="left"><a href="10_ThreadVsProcess.md">← 10_ThreadVsProcess.md</a></p>
+<p align="right" style="margin-top:-2.4em;"><a href="12_PriorityInversion.md">12_PriorityInversion.md →</a></p>

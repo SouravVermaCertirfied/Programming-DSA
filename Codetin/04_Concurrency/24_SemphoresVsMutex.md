@@ -42,7 +42,5 @@
 | Expressiveness       | Higher             | Lower     |
 
 ---
-<div style="display: flex; justify-content: space-between;">
-    <a href="22_Semaphores.md">← 22_Semaphores.md</a>
-    <a href="25_SpuriousAwake.md">25_SpuriousAwake.md →</a>
-</div>
+<p align="left"><a href="22_Semaphores.md">← 22_Semaphores.md</a></p>
+<p align="right" style="margin-top:-2.4em;"><a href="25_SpuriousAwake.md">25_SpuriousAwake.md →</a></p>

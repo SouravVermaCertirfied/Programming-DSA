@@ -81,7 +81,5 @@ To prevent buffer overflows (when data is sent faster than it can be processed),
 * **Half-Duplex vs. Full-Duplex:** Standard UART is full-duplex, but RS-485 (a common UART-based industrial standard) is often half-duplex.
 
 ---
-<div style="display: flex; justify-content: space-between;">
-    <a href="04_SPI.md">← 04_SPI.md</a>
-    <a href="06_DMA.md">06_DMA.md →</a>
-</div>
+<p align="left"><a href="04_SPI.md">← 04_SPI.md</a></p>
+<p align="right" style="margin-top:-2.4em;"><a href="06_DMA.md">06_DMA.md →</a></p>

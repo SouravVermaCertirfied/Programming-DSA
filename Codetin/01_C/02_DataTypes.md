@@ -58,7 +58,5 @@ They all also have unsigned, prefixed with `u-`
 - `%zu` tells printf to expect a size_t argument.
 
 ---
-<div style="display: flex; justify-content: space-between;">
-    <a href="01_CompilationProcess.md">← 01_CompilationProcess.md</a>
-    <a href="02_Endinaness.md">02_Endinaness.md →</a>
-</div>
+<p align="left"><a href="01_CompilationProcess.md">← 01_CompilationProcess.md</a></p>
+<p align="right" style="margin-top:-2.4em;"><a href="02_Endinaness.md">02_Endinaness.md →</a></p>

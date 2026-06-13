@@ -122,7 +122,5 @@ int main() {
 * **Use Epochs** for high-performance systems (like Linux kernel RCU or high-end databases) where you want the lowest possible overhead on the "fast path."
 
 ---
-<div style="display: flex; justify-content: space-between;">
-    <a href="31_ABA_Solution_2.md">← 31_ABA_Solution_2.md</a>
-    <a href="60_CodingQuestionConcepts.md">60_CodingQuestionConcepts.md →</a>
-</div>
+<p align="left"><a href="31_ABA_Solution_2.md">← 31_ABA_Solution_2.md</a></p>
+<p align="right" style="margin-top:-2.4em;"><a href="60_CodingQuestionConcepts.md">60_CodingQuestionConcepts.md →</a></p>

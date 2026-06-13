@@ -267,7 +267,5 @@ The content of this repository is bound by the following licenses:
 - The learning resources in the [`/curriculum`](/curriculum) directory including their subdirectories thereon are copyright © 2025 freeCodeCamp.org
 
 ---
-<div style="display: flex; justify-content: space-between;">
-    <a href="tables.md">← tables.md</a>
-    
-</div>
+<p align="left"><a href="tables.md">← tables.md</a></p>
+<p align="right" style="margin-top:-2.4em;"></p>

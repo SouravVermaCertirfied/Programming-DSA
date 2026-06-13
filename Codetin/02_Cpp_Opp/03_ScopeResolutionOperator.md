@@ -63,7 +63,5 @@ If a class inherits from two different classes that happen to have a function wi
 ---
 
 ---
-<div style="display: flex; justify-content: space-between;">
-    <a href="02_AccessModifiers.md">← 02_AccessModifiers.md</a>
-    <a href="03_ScopeResolutionOperatorwithInheritance.md">03_ScopeResolutionOperatorwithInheritance.md →</a>
-</div>
+<p align="left"><a href="02_AccessModifiers.md">← 02_AccessModifiers.md</a></p>
+<p align="right" style="margin-top:-2.4em;"><a href="03_ScopeResolutionOperatorwithInheritance.md">03_ScopeResolutionOperatorwithInheritance.md →</a></p>

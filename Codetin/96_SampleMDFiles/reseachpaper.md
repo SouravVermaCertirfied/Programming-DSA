@@ -116,7 +116,5 @@ Future work includes extending the model to support video stylization and user-c
 </details>
 
 ---
-<div style="display: flex; justify-content: space-between;">
-    <a href="newantoer.md">← newantoer.md</a>
-    <a href="tables.md">tables.md →</a>
-</div>
+<p align="left"><a href="newantoer.md">← newantoer.md</a></p>
+<p align="right" style="margin-top:-2.4em;"><a href="tables.md">tables.md →</a></p>

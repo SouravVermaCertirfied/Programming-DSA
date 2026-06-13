@@ -140,7 +140,5 @@ Ready to test your knowledge? Imagine you are building a **Music Streaming App**
 3.  **Current Song in Player:** `std::_______<Song>`
 
 ---
-<div style="display: flex; justify-content: space-between;">
-    <a href="05_SmartPointers.md">← 05_SmartPointers.md</a>
-    <a href="06_Templates.md">06_Templates.md →</a>
-</div>
+<p align="left"><a href="05_SmartPointers.md">← 05_SmartPointers.md</a></p>
+<p align="right" style="margin-top:-2.4em;"><a href="06_Templates.md">06_Templates.md →</a></p>

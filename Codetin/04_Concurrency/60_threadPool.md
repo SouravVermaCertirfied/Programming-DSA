@@ -223,7 +223,5 @@ Each thread gets its own version of `tls_var` — changes are not visible to oth
 | Thread-Local Storage| Per-thread variable isolation            |
 
 ---
-<div style="display: flex; justify-content: space-between;">
-    <a href="60_CodingQuestionConcepts.md">← 60_CodingQuestionConcepts.md</a>
-    <a href="tips_atmoic.md">tips_atmoic.md →</a>
-</div>
+<p align="left"><a href="60_CodingQuestionConcepts.md">← 60_CodingQuestionConcepts.md</a></p>
+<p align="right" style="margin-top:-2.4em;"><a href="tips_atmoic.md">tips_atmoic.md →</a></p>

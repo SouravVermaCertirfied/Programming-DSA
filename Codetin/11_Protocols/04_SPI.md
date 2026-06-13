@@ -81,7 +81,5 @@ There are two primary ways to connect multiple Targets to a single Controller:
 Do you need a breakdown of a specific SPI mode for a driver you are writing, or are you comparing these for a hardware selection?
 
 ---
-<div style="display: flex; justify-content: space-between;">
-    <a href="02_I2C.md">← 02_I2C.md</a>
-    <a href="05_UART.md">05_UART.md →</a>
-</div>
+<p align="left"><a href="02_I2C.md">← 02_I2C.md</a></p>
+<p align="right" style="margin-top:-2.4em;"><a href="05_UART.md">05_UART.md →</a></p>

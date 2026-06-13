@@ -47,7 +47,5 @@ This is a demo Markdown file with dummy content. You can use it as a template fo
 Feel free to modify the content or structure of these tables as needed.
 
 ---
-<div style="display: flex; justify-content: space-between;">
-    <a href="reseachpaper.md">← reseachpaper.md</a>
-    <a href="topics2.md">topics2.md →</a>
-</div>
+<p align="left"><a href="reseachpaper.md">← reseachpaper.md</a></p>
+<p align="right" style="margin-top:-2.4em;"><a href="topics2.md">topics2.md →</a></p>

@@ -213,7 +213,5 @@ int main(){
 </details>
 
 ---
-<div style="display: flex; justify-content: space-between;">
-    <a href="01_referencesInCpp.md">← 01_referencesInCpp.md</a>
-    <a href="02_OperatorOverloading.md">02_OperatorOverloading.md →</a>
-</div>
+<p align="left"><a href="01_referencesInCpp.md">← 01_referencesInCpp.md</a></p>
+<p align="right" style="margin-top:-2.4em;"><a href="02_OperatorOverloading.md">02_OperatorOverloading.md →</a></p>

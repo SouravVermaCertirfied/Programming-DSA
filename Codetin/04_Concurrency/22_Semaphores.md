@@ -137,7 +137,5 @@ int main(){
 ```
 
 ---
-<div style="display: flex; justify-content: space-between;">
-    <a href="21_ConditionVariables.md">← 21_ConditionVariables.md</a>
-    <a href="24_SemphoresVsMutex.md">24_SemphoresVsMutex.md →</a>
-</div>
+<p align="left"><a href="21_ConditionVariables.md">← 21_ConditionVariables.md</a></p>
+<p align="right" style="margin-top:-2.4em;"><a href="24_SemphoresVsMutex.md">24_SemphoresVsMutex.md →</a></p>

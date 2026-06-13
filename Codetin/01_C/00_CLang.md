@@ -29,7 +29,5 @@
  24. Arrays
 
 ---
-<div style="display: flex; justify-content: space-between;">
-    <span></span>
-    <a href="01_CompilationProcess.md">01_CompilationProcess.md →</a>
-</div>
+<p align="left"></p>
+<p align="right" style="margin-top:-2.4em;"><a href="01_CompilationProcess.md">01_CompilationProcess.md →</a></p>

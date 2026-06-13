@@ -63,7 +63,5 @@ int main() {
 ```
 
 ---
-<div style="display: flex; justify-content: space-between;">
-    <a href="02_OperatorOverloading.md">← 02_OperatorOverloading.md</a>
-    <a href="04_ExceptionHandling.md">04_ExceptionHandling.md →</a>
-</div>
+<p align="left"><a href="02_OperatorOverloading.md">← 02_OperatorOverloading.md</a></p>
+<p align="right" style="margin-top:-2.4em;"><a href="04_ExceptionHandling.md">04_ExceptionHandling.md →</a></p>

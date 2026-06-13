@@ -309,7 +309,5 @@ You have two numbers in your "Pantry" (RAM). You want to add them. On an Intel c
 On **ARM**, it’s a 3-step process. Write down the 3 commands (in plain English) that the CPU must execute to get that sum. If you get this right, you've officially started Day 1.
 
 ---
-<div style="display: flex; justify-content: space-between;">
-    <span></span>
-    <a href="01_CISC_RISC.md">01_CISC_RISC.md →</a>
-</div>
+<p align="left"></p>
+<p align="right" style="margin-top:-2.4em;"><a href="01_CISC_RISC.md">01_CISC_RISC.md →</a></p>

@@ -1,7 +1,5 @@
 
 
 ---
-<div style="display: flex; justify-content: space-between;">
-    <a href="09_PCIe.md">← 09_PCIe.md</a>
-    <a href="11_Wifi.md">11_Wifi.md →</a>
-</div>
+<p align="left"><a href="09_PCIe.md">← 09_PCIe.md</a></p>
+<p align="right" style="margin-top:-2.4em;"><a href="11_Wifi.md">11_Wifi.md →</a></p>

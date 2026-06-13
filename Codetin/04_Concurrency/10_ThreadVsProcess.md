@@ -122,7 +122,5 @@ Golden Rule : Use atomic for states and atomic for relationships.
 | Complex invariants         | ✅      | ❌      |
 
 ---
-<div style="display: flex; justify-content: space-between;">
-    <a href="00_QuestionBank.md">← 00_QuestionBank.md</a>
-    <a href="11_Deadlocks.md">11_Deadlocks.md →</a>
-</div>
+<p align="left"><a href="00_QuestionBank.md">← 00_QuestionBank.md</a></p>
+<p align="right" style="margin-top:-2.4em;"><a href="11_Deadlocks.md">11_Deadlocks.md →</a></p>

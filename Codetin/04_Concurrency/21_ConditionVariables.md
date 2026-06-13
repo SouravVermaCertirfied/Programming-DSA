@@ -83,7 +83,5 @@ int main(){
 ```
 
 ---
-<div style="display: flex; justify-content: space-between;">
-    <a href="20_Mutex.md">← 20_Mutex.md</a>
-    <a href="22_Semaphores.md">22_Semaphores.md →</a>
-</div>
+<p align="left"><a href="20_Mutex.md">← 20_Mutex.md</a></p>
+<p align="right" style="margin-top:-2.4em;"><a href="22_Semaphores.md">22_Semaphores.md →</a></p>

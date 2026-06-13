@@ -18,7 +18,5 @@ unsigned int x = 1U << 31; // Safe and well-defined
 - you class you can always do it in, ofcorse in CPP.
 
 ---
-<div style="display: flex; justify-content: space-between;">
-    <a href="25_tips2.md">← 25_tips2.md</a>
-    
-</div>
+<p align="left"><a href="25_tips2.md">← 25_tips2.md</a></p>
+<p align="right" style="margin-top:-2.4em;"></p>

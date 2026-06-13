@@ -65,7 +65,5 @@ char *my_strcpy(char *dest, const char *source) {
     }
 
 ---
-<div style="display: flex; justify-content: space-between;">
-    <a href="12_Strings.md">← 12_Strings.md</a>
-    <a href="15_memcpy.md">15_memcpy.md →</a>
-</div>
+<p align="left"><a href="12_Strings.md">← 12_Strings.md</a></p>
+<p align="right" style="margin-top:-2.4em;"><a href="15_memcpy.md">15_memcpy.md →</a></p>

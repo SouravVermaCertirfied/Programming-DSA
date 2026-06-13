@@ -76,7 +76,5 @@ int main() {
 In C++, if you have a base class pointer (like `Enemy*`) pointing to a derived object (like `Ghost`), and you delete it, the `~Ghost()` destructor will **not** be called unless the base class destructor is marked `virtual`. This causes memory leaks! Always include `virtual ~Base() = default;`.
 
 ---
-<div style="display: flex; justify-content: space-between;">
-    <a href="02_Singleton.md">← 02_Singleton.md</a>
-    <a href="04_Observer.md">04_Observer.md →</a>
-</div>
+<p align="left"><a href="02_Singleton.md">← 02_Singleton.md</a></p>
+<p align="right" style="margin-top:-2.4em;"><a href="04_Observer.md">04_Observer.md →</a></p>

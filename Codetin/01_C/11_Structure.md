@@ -117,7 +117,5 @@ To embed `struct Foo obj;`, the compiler must know:
 - But struct `Foo` is not fully defined yet → ❌ error.
 
 ---
-<div style="display: flex; justify-content: space-between;">
-    <a href="09_PointersQB.md">← 09_PointersQB.md</a>
-    <a href="12_Strings.md">12_Strings.md →</a>
-</div>
+<p align="left"><a href="09_PointersQB.md">← 09_PointersQB.md</a></p>
+<p align="right" style="margin-top:-2.4em;"><a href="12_Strings.md">12_Strings.md →</a></p>

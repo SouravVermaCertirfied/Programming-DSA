@@ -75,7 +75,5 @@ int main() {
 ```
 
 ---
-<div style="display: flex; justify-content: space-between;">
-    <a href="60_threadPool.md">← 60_threadPool.md</a>
-    
-</div>
+<p align="left"><a href="60_threadPool.md">← 60_threadPool.md</a></p>
+<p align="right" style="margin-top:-2.4em;"></p>

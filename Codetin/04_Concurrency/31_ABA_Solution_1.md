@@ -73,7 +73,5 @@ int main() {
 ---
 
 ---
-<div style="display: flex; justify-content: space-between;">
-    <a href="31_ABA_Solution_0.md">← 31_ABA_Solution_0.md</a>
-    <a href="31_ABA_Solution_2.md">31_ABA_Solution_2.md →</a>
-</div>
+<p align="left"><a href="31_ABA_Solution_0.md">← 31_ABA_Solution_0.md</a></p>
+<p align="right" style="margin-top:-2.4em;"><a href="31_ABA_Solution_2.md">31_ABA_Solution_2.md →</a></p>

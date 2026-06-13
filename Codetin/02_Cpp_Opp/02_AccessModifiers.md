@@ -31,7 +31,5 @@ This table shows how the access level of a member in the **Parent Class** is tra
 *   **The "Private" Rule:** Regardless of the inheritance type, **Private** members of a parent are **never** directly accessible to a child class. They are inherited (they exist in memory), but the child cannot "see" them.
 
 ---
-<div style="display: flex; justify-content: space-between;">
-    <a href="01_Pillars.md">← 01_Pillars.md</a>
-    <a href="03_ScopeResolutionOperator.md">03_ScopeResolutionOperator.md →</a>
-</div>
+<p align="left"><a href="01_Pillars.md">← 01_Pillars.md</a></p>
+<p align="right" style="margin-top:-2.4em;"><a href="03_ScopeResolutionOperator.md">03_ScopeResolutionOperator.md →</a></p>

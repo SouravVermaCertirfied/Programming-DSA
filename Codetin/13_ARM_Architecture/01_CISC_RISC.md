@@ -85,7 +85,5 @@ The "Disaster" I alluded to in the previous question is **Latency**.
 ---
 
 ---
-<div style="display: flex; justify-content: space-between;">
-    <a href="00_Content.md">← 00_Content.md</a>
-    
-</div>
+<p align="left"><a href="00_Content.md">← 00_Content.md</a></p>
+<p align="right" style="margin-top:-2.4em;"></p>

@@ -48,7 +48,5 @@ pthread_mutex_unlock(&lock);
 ```
 
 ---
-<div style="display: flex; justify-content: space-between;">
-    <a href="24_SemphoresVsMutex.md">← 24_SemphoresVsMutex.md</a>
-    <a href="26_Spinlocks.md">26_Spinlocks.md →</a>
-</div>
+<p align="left"><a href="24_SemphoresVsMutex.md">← 24_SemphoresVsMutex.md</a></p>
+<p align="right" style="margin-top:-2.4em;"><a href="26_Spinlocks.md">26_Spinlocks.md →</a></p>

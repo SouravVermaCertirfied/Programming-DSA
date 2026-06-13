@@ -101,7 +101,5 @@ void *consumer(void *args){
 ```
 
 ---
-<div style="display: flex; justify-content: space-between;">
-    <a href="fragmentation.md">← fragmentation.md</a>
-    
-</div>
+<p align="left"><a href="fragmentation.md">← fragmentation.md</a></p>
+<p align="right" style="margin-top:-2.4em;"></p>

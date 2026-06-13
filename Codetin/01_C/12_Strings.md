@@ -22,7 +22,5 @@ Following methods can be used:
 ### using `scanf`
 
 ---
-<div style="display: flex; justify-content: space-between;">
-    <a href="11_Structure.md">← 11_Structure.md</a>
-    <a href="14_strcpy_strcmp.md">14_strcpy_strcmp.md →</a>
-</div>
+<p align="left"><a href="11_Structure.md">← 11_Structure.md</a></p>
+<p align="right" style="margin-top:-2.4em;"><a href="14_strcpy_strcmp.md">14_strcpy_strcmp.md →</a></p>

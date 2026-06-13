@@ -9,7 +9,5 @@
 | **Day 7** | Mock IV & Review     | Review all concepts, trade-offs, best practices                                                              | Solve problems without notes; debug broken concurrent code                     | Clear explanations > perfect code                           |
 
 ---
-<div style="display: flex; justify-content: space-between;">
-    <span></span>
-    <a href="00_MultiThreading.md">00_MultiThreading.md →</a>
-</div>
+<p align="left"></p>
+<p align="right" style="margin-top:-2.4em;"><a href="00_MultiThreading.md">00_MultiThreading.md →</a></p>

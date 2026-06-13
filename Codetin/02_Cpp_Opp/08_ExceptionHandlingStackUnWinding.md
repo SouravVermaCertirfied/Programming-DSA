@@ -9,7 +9,5 @@ During this process:
 - If no matching catch block is found, the program terminates.
 
 ---
-<div style="display: flex; justify-content: space-between;">
-    <a href="07_OverridingAndVirtualKeyword.md">← 07_OverridingAndVirtualKeyword.md</a>
-    
-</div>
+<p align="left"><a href="07_OverridingAndVirtualKeyword.md">← 07_OverridingAndVirtualKeyword.md</a></p>
+<p align="right" style="margin-top:-2.4em;"></p>
