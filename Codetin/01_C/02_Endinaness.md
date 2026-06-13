@@ -59,9 +59,5 @@ int main() {
 ```
 
 ---
-<table width="100%">
-  <tr>
-    <td align="left" width="50%"><a href="02_DataTypes.md">← 02_DataTypes.md</a></td>
-    <td align="right" width="50%"><a href="03_MemoryAllocationOfC.md">03_MemoryAllocationOfC.md →</a></td>
-  </tr>
-</table>
+<p align="left"><a href="02_DataTypes.md">← 02_DataTypes.md</a></p>
+<p align="right" style="margin-top:-2.4em;"><a href="03_MemoryAllocationOfC.md">03_MemoryAllocationOfC.md →</a></p>
