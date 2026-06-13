@@ -59,7 +59,6 @@ int main() {
 ```
 
 ---
-<p align="justify">
-  <a href="02_DataTypes.md">← 02_DataTypes.md</a>
-  <a href="03_MemoryAllocationOfC.md" align="right">03_MemoryAllocationOfC.md →</a>
-</p>
+| | |
+| :--- | ---: |
+| [← 02_DataTypes.md](02_DataTypes.md) | [03_MemoryAllocationOfC.md →](03_MemoryAllocationOfC.md) |
