@@ -59,5 +59,7 @@ int main() {
 ```
 
 ---
-<p align="left"><a href="02_DataTypes.md">← 02_DataTypes.md</a></p>
-<p align="right" style="margin-top:-2.4em;"><a href="03_MemoryAllocationOfC.md">03_MemoryAllocationOfC.md →</a></p>
+<p align="justify">
+  <a href="02_DataTypes.md">← 02_DataTypes.md</a>
+  <a href="03_MemoryAllocationOfC.md" align="right">03_MemoryAllocationOfC.md →</a>
+</p>
