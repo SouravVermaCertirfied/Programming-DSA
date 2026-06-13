@@ -62,3 +62,7 @@ int main() {
 | | |
 | :--- | ---: |
 | [← 02_DataTypes.md](02_DataTypes.md) | [03_MemoryAllocationOfC.md →](03_MemoryAllocationOfC.md) |
+
+---
+<p align="left"><a href="02_DataTypes.md">← 02_DataTypes.md</a></p>
+<p align="right" style="margin-top:-2.4em;"><a href="03_MemoryAllocationOfC.md">03_MemoryAllocationOfC.md →</a></p>
