@@ -20,7 +20,7 @@ $$matrix[2] \rightarrow *(matrix + 2)$$
 
 3. Substitute step 2 back into step 1:
 
-$$ *(*(matrix + 2) + 4) $$
+$$(*(*(matrix + 2) + 4))$$
 
 
 
