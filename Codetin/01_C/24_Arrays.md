@@ -22,7 +22,7 @@ $$matrix[2] \rightarrow *(matrix + 2)$$
 
 $$*(*(matrix + 2) + 4)$$
 
- **Example:**
+**Example:**
 
 ```c
 
