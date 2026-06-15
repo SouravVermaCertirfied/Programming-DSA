@@ -23,13 +23,6 @@ $$matrix[2] \rightarrow *(matrix + 2)$$
 $$*(*(matrix + 2) + 4)$$
 
 
-If we apply this rule mechanically to `matrix[2][4]`:
-
-1. First, treat `matrix[2]` as "A" and `4` as "B":
-
-$$matrix[2][4] \rightarrow *(matrix[2] + 4)$$
-
-
 
 ---
 **Example:**
