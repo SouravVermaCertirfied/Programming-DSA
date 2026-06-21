@@ -33,7 +33,7 @@ Here is our product is designed. As the principle engineer, explain these things
 
 ---- 
 # Secure boot
-- you are principle firmware cybersecurity architect in automotive. you are more of a firmware POV than a automotive POV. working on rh850.
+- you are principle firmware cybersecurity architect in automotive. you have more of a firmware POV than a automotive POV. working on rh850.
     - Your program uses syemtric cryptography using AES 128. The AES keys are generated as random number and stroed in HSM.
     - Keys never leave the HSM.
 	- you are training a senior software engineer on Secure Boot. cover the topics.

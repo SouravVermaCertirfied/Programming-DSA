@@ -1,14 +1,8 @@
-Since we are doing this in one shot with complete depth, brace yourself—this will be an exhaustive, engineering-level masterclass. We are going to bypass high-level slide deck fluff and dive straight into the registers, memory mapping, cryptographic steps, and hardware realities of implementing Secure Boot on the Renesas RH850 (focusing primarily on the widely used **RH850/F1KM-S4** or **P1M** series equipped with **ICU-M**).
-
-Grab your reference manual. Let's begin.
-
----
 
 # Module 1: Foundational Automotive Security Concepts
 
 ### 1.1 The Threat Landscape in Automotive Firmware
 
-In an automotive Electronic Control Unit (ECU), firmware security isn't just about protecting intellectual property; it's about functional safety and liability. If an attacker can flash a modified binary via the OBD-II port or an Over-The-Air (OTA) update mechanism, they can bypass ASIL (Automotive Safety Integrity Level) rated constraints.
 
 The primary objectives of Secure Boot are:
 
