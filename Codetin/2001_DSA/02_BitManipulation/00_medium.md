@@ -1,6 +1,6 @@
 Tips :  
 - Use U suffixes: Always use 1U << n to ensure you are working with unsigned integers.   
-- Think about "Power of 2": Many bit problems are solved by realizing that $(n \text{ \& } (n-1)) == 0$ checks if a number is a power of 2.
+- Think about "Power of 2": Many bit problems are solved by realizing that $(n \mathbin{\&} (n-1)) = 0$ checks if a number is a power of 2.
 - Fixed Width Types: Use uint32_t or uint16_t instead of int to show you understand embedded constraints.
 
 
