@@ -150,9 +150,25 @@ uint32_t reverseBitsOptimized(uint32_t n) {
 
 * **Time Complexity:** $O(1)$ (Executes in exactly 5 steps, completely bypassing the 32-iteration loop).
 * **Space Complexity:** $O(1)$.
+
 </details>
 
-### Question X: <Title>
+
+### Question 5: Extract the value.  
+
+The Task: 
+
+
+<details><summary>Solution</summary>
+
+```c
+
+```
+
+</details>
+
+### Question 6: Toggle the value
+
 The Task: 
 
 <details><summary>Solution</summary>
@@ -160,9 +176,11 @@ The Task:
 ```c
 
 ```
+
 </details>
 
-### Question X: <Title>
+### Question 7: Check bit
+
 The Task: 
 
 <details><summary>Solution</summary>
@@ -170,14 +188,52 @@ The Task:
 ```c
 
 ```
+
 </details>
 
-### Question X: <Title>
-The Task: 
+### Swap two numbers using XOR without temp variable.
 
-<details><summary>Solution</summary>
+### Why XOR of same numbers cancels out?
 
-```c
+### bit masking
+Bit masking & manipulation  
+What is a bitmask and why is it used?  
+How to generate all subsets using bitmask?  
+How to check subset using bitwise operations?  
+How to clear all bits from LSB to ith bit?  
+How to set all bits from 0 to ith position?  
 
-```
-</details>
+### Shifts & arithmetic tricks
+Multiply a number by 2 using bit shift?  
+Divide a number by 2 using bit shift?  
+Why left shift may cause overflow?  
+Difference between n << 1 and n * 2?  
+Why right shift of negative numbers is     implementation-dependent?  
+
+### Advanced bit hacks
+How to reverse bits of a number?  
+How to swap odd and even bits?  
+How to find position of only set bit?  
+How to detect if two numbers have opposite signs?  
+How to compute absolute value using bit tricks?  
+
+### Counting & math with bits
+How to count trailing zeros?  
+How to count leading zeros?  
+How to find MSB (most significant bit)?  
+How to compute log base 2 using bits?  
+Why powers of 2 are important in memory alignment?  
+
+### Interview-level coding patterns
+How to check if ith bit is set in array of integers?
+How to find duplicate using bitwise operations?
+How to compute XOR of range 1 to n?
+How to find bit difference between two numbers?
+How to minimize flips to convert A to B?
+
+### Edge cases & traps  
+What happens when shifting by >= word size?  
+Why ~x behaves differently in signed integers?  
+What is sign extension in bit operations?  
+Why INT_MIN is tricky in absolute value?  
+How to avoid undefined behavior in bit hacks?  

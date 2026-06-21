@@ -1,6 +1,4 @@
-Below are **realistic Qualcomm-style deep dive interview questions** based on patterns seen in **SoC security, automotive cybersecurity, embedded systems, and PKI/system design rounds**.
-
-These are not “leaked questions,” but **very close to what interviewers at Qualcomm typically ask senior engineers (7–12 YOE)**.
+Below are **realistic QC-style deep dive interview questions** based on patterns seen in **SoC security, automotive cybersecurity, embedded systems, and PKI/system design rounds** typically ask senior engineers (7–12 YOE).
 
 ---
 
@@ -62,7 +60,7 @@ These are directly relevant to your automotive cybersecurity background.
 
 # 🚗 2. Automotive + Embedded Security
 
-Very commonly asked in Qualcomm automotive / ADAS roles.
+Very commonly asked in QC automotive / ADAS roles.
 
 * Design a **secure ECU architecture from boot to runtime**
 
@@ -115,7 +113,7 @@ Follow-ups they ask:
 
 ---
 
-# 🧠 4. System Design (Core Qualcomm Round)
+# 🧠 4. System Design (Core QC Round)
 
 These are broader architecture questions.
 
@@ -140,7 +138,7 @@ They will probe:
 
 # ⚙️ 5. Embedded + OS + Low-level Security
 
-Very common in Qualcomm silicon/firmware roles.
+Very common in QC silicon/firmware roles.
 
 * What happens from power-on reset to OS boot in an SoC?
 
@@ -187,7 +185,7 @@ Expected answers:
 
 ---
 
-# 📡 7. V2X / Connected Systems (often asked for Qualcomm)
+# 📡 7. V2X / Connected Systems (often asked for QC)
 
 * How would you design security for V2X communication?
 
@@ -225,7 +223,7 @@ They will ask:
 
 ---
 
-# 🎯 How Qualcomm interviewers think
+# 🎯 How QC interviewers think
 
 For senior roles, they evaluate:
 
@@ -248,21 +246,3 @@ Not “what is PKI”, but:
 * supplier ecosystems
 
 ---
-
-# 🚀 If you want next step (highly recommended)
-
-I can simulate a **real Qualcomm system design interview** with you:
-
-* I ask questions
-* you answer
-* I interrupt like interviewer
-* I push on weak points
-* then I refine your answer to “senior-level bar”
-
-Or I can give you:
-
-* “Model answers for each question”
-* “Top 20 most repeated Qualcomm security questions”
-* “Mock interview: Automotive PKI + OTA combined design”
-
-Just tell me 👍
