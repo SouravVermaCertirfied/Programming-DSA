@@ -1,4 +1,4 @@
-For a deep-dive technical interview at silicon giants like Qualcomm, NVIDIA, NXP, Broadcom, or SanDisk, you must bridge the gap between **high-level PKI concepts** and **silicon/hardware-level enforcement**. These companies care about *how* keys are isolated in silicon, *how* line-rate crypto or resource-constrained ECUs handle heavy handshakes, and *how* the cloud backend scales to support millions of connected vehicles.
+You must bridge the gap between **high-level PKI concepts** and **silicon/hardware-level enforcement**. These companies care about *how* keys are isolated in silicon, *how* line-rate crypto or resource-constrained ECUs handle heavy handshakes, and *how* the cloud backend scales to support millions of connected vehicles.
 
 Here is a highly detailed, comprehensive architectural breakdown of **Automotive PKI Design at Scale** written for an experienced engineer.
 

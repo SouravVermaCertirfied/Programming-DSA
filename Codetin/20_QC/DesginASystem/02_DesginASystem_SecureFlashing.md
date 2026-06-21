@@ -1,4 +1,4 @@
-For an 8 YOE Software Engineer interviewing at silicon and tier-1 giants, **Secure Flashing** (often called Secure Bootloader or Flash Bootloader architecture) is a critical competency. The interviewers will evaluate how well you handle the intersection of **hardware resource constraints, atomic memory safety, and cryptographic enforcement.**
+**Secure Flashing** (often called Secure Bootloader or Flash Bootloader architecture) is a critical competency. The interviewers will evaluate how well you handle the intersection of **hardware resource constraints, atomic memory safety, and cryptographic enforcement.**
 
 Here is the architectural blueprint for designing a secure flashing system at scale.
 
