@@ -1,7 +1,7 @@
-Tips :  
-- Use U suffixes: Always use 1U << n to ensure you are working with unsigned integers.   
-- Think about "Power of 2": Many bit problems are solved by realizing that $(n \mathbin{\&} (n-1)) = 0$ checks if a number is a power of 2.
-- Fixed Width Types: Use uint32_t or uint16_t instead of int to show you understand embedded constraints.
+## Tips :  
+- **Use U suffixes:** Always use `1U << n` to ensure you are working with unsigned integers.   
+- **Think about "Power of 2:** Many bit problems are solved by realizing that `(n & (n-1)) = 0` checks if a number is a power of 2.
+- **Fixed Width Types:** Use `uint32_t` or `uint16_t` instead of int to show you understand embedded constraints.
 
 
 ## Problem 1 : Sparse Bit Count & Manipulation

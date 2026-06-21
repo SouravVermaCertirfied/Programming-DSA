@@ -1,4 +1,4 @@
-### Question 1:
+### Question 1: Set Specific Bits
 The Task: You are given a pointer to a memory-mapped register at address 0x40001000. You need to set bits 4, 5, and 6 to the binary value 101 (5) without disturbing any other bits in that 32-bit register.
 Write the C code snippet to do this.
 Follow-up: Why must the pointer be declared as volatile uint32_t*?
@@ -18,7 +18,7 @@ uint32_t value = (0x5U << 4);
 ```
 </details>
 
-### Question 2:
+### Question 2: Swap Nibble
 Write a macro to swap the nibbles in a 16-bit word. Example: 0x1234 becomes 0x2143.
 <details><summary>Solution</summary>
 
@@ -52,7 +52,7 @@ int main() {
 ```
 </details>
 
-### Question 3:
+### Question 3: Endienss Conversion
 Endianness Swap
 The Task: Convert a 32-bit integer from Little Endian to Big Endian (or vice versa). This is essentially swapping the byte order: ABCD becomes DCBA.
 <details><summary>Brute</summary>
@@ -94,7 +94,7 @@ uint32_t swapEndianness(uint32_t n) {
 ```
 </details>
 
-### Question 4:
+### Question 4: Reverse Bits
 Reverse the Bits
 The Task: Given a 32-bit unsigned integer, reverse the order of the bits. Bit 0 becomes Bit 31, Bit 1 becomes Bit 30, and so on.
 <details><summary>Brute</summary>
@@ -123,7 +123,7 @@ uint32_t reverseBits(uint32_t n) {
 
 <details><summary>Optimal</summary>
 
-### Method 2: The Divide & Conquer Approach (Highly Optimized)
+**Method 2: The Divide & Conquer Approach (Highly Optimized)**
 
 ```c
 
@@ -150,4 +150,34 @@ uint32_t reverseBitsOptimized(uint32_t n) {
 
 * **Time Complexity:** $O(1)$ (Executes in exactly 5 steps, completely bypassing the 32-iteration loop).
 * **Space Complexity:** $O(1)$.
+</details>
+
+### Question X: <Title>
+The Task: 
+
+<details><summary>Solution</summary>
+
+```c
+
+```
+</details>
+
+### Question X: <Title>
+The Task: 
+
+<details><summary>Solution</summary>
+
+```c
+
+```
+</details>
+
+### Question X: <Title>
+The Task: 
+
+<details><summary>Solution</summary>
+
+```c
+
+```
 </details>
