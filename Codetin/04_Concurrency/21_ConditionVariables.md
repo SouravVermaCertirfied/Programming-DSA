@@ -1,11 +1,32 @@
 # Condition Variables
 
-- A condition variable does two things:
-    - Release the mutex and sleep the thread.
-    - Wake up the thread, when the shared condition is true.  
-- It is always used along with a mutex.
+### A condition variable does two things:
+- Release the mutex and sleep the thread.
+- Wake up the thread, when the shared condition is true.  
 
-**Synatx in C**
+It is always used along with a mutex.
+
+---
+## Lost Wakeup
+- Condition variables don't queue notifications; they only wake threads that are already waiting. The actual condition must be stored in shared state protected by a mutex.
+- A condition variable is not a message queue. If pthread_cond_signal() occurs before a thread begins waiting, the signal is lost. Therefore, the actual state must be stored in a shared predicate protected by a mutex, and the waiting thread checks that predicate in a loop.
+
+### Example of lost wakeup
+```c
+pthread_cond_signal(&cond);  // no waiter yet
+
+// later
+pthread_cond_wait(&cond, &mutex); // singal has already been done, so this guy will keep waiting forever, if there are no new `signals`
+```
+
+**If you need queued notifications**  Use something that maintains state/count, such as:
+- POSIX semaphores (sem_t)  
+- work queue protected by a mutex  
+- Event counters / sequence numbers  
+
+---
+
+## Condition Varible Synatx in C
 ```cpp
 pthread_mutex_t lock;
 pthread_cond_t cond_var; ☢️ // declare
