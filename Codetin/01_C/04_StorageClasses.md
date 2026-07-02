@@ -1,4 +1,4 @@
-# Storage Classes in C `ARCV`
+# Storage Classes in C `RAsE`
 
 > They decide - ***memory*** where it will stored, ***scope*** of the variable and ***access*** of the variable.
 

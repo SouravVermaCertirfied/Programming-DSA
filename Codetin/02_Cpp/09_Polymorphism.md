@@ -1,4 +1,4 @@
-# Runtime vs Compile Time Poly
+# Runtime vs Compile Time Polymorphism
 
 In C++, polymorphism allows objects to be treated as instances of their parent class while behaving according to their actual derived class. The distinction between **Compile-Time** and **Runtime** polymorphism boils down to *when* the compiler decides which function to execute.
 
