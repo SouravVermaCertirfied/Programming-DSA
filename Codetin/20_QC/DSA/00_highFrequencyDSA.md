@@ -70,11 +70,12 @@ You should be able to solve these in 10–20 min each:
 
 ## 5. Linked List (Common in screening rounds)
 
-* Reverse Linked List [206. Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/description/)
-* Detect Cycle (Floyd’s algorithm) [141. Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/description/)
-* Merge Two Sorted Lists [21. Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/description/)
-* Remove Nth Node From End [19. Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/description/)
-* LRU Cache (important system-ish DSA hybrid) [146. LRU Cache](https://leetcode.com/problems/lru-cache/description/)
+1. [206. Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/description/) ( recursive and interative approach) 
+2. **Cycles:** [LC141 Detect](https://leetcode.com/problems/linked-list-cycle/description/) (explain math) || [Find start](https://leetcode.com/problems/linked-list-cycle-ii/description/) || remove the the loop
+3. Merge Two Sorted Lists [21. Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/description/)
+4. Remove Nth Node From End [19. Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/description/)
+5. **Design** [146. LRU Cache](https://leetcode.com/problems/lru-cache/description/)
+6. Swap nodes in k-groups
 
 ---
 
@@ -131,6 +132,7 @@ They sometimes mix DSA with reasoning:
   * Single Number [136. Single Number](https://leetcode.com/problems/single-number/description/)
   * Count set bits [338. Counting Bits](https://leetcode.com/problems/counting-bits/description/)
   * Reverse bits [190. Reverse Bits](https://leetcode.com/problems/reverse-bits/description/)
+  * extract bits , set bits and reset bit, exhange bit values at given position
 * Memory/efficiency questions:
 
   * O(1) space tricks
