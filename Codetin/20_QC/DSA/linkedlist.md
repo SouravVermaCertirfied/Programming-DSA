@@ -70,3 +70,45 @@ Then:
 Because: `X=(k-1)C+(C-Y)`
 
 they must arrive at the same node: the **start of the cycle**.
+
+
+## Remove cycle in a single linked list
+
+```cpp
+
+class Solution {
+  public:
+    void removeLoop(Node* head) {
+        
+        Node *slow = head;
+        Node *fast = head;
+        
+        while((fast!=nullptr) && (fast->next!=nullptr)){ // check if there is a loop or not
+            slow = slow->next;
+            fast = fast->next->next;
+            
+            if(slow == fast){ // means there exists the loop
+                // then find the starting index
+                Node *tot = head;
+                Node *hare = slow; // this is the meeting point
+                while(tot!=hare){
+                    tot = tot->next;
+                    hare = hare->next;
+                }
+                
+                // now tot is is the address of the starting point of the loop
+                Node *meetingpoint = slow; // this is the meeting point
+                while(meetingpoint->next != tot){ // iternate you find the node that points to the starting of loop
+                    meetingpoint = meetingpoint->next;
+                }
+                meetingpoint->next = nullptr; // remove the loop
+                break;
+            }
+        }
+        
+        return;
+        
+    }
+};
+
+```

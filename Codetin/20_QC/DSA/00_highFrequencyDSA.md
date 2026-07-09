@@ -71,11 +71,12 @@ You should be able to solve these in 10–20 min each:
 ## 5. Linked List (Common in screening rounds)
 
 1. [206. Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/description/) ( recursive and interative approach) 
-2. **Cycles:** [LC141 Detect](https://leetcode.com/problems/linked-list-cycle/description/) (explain math) || [Find start](https://leetcode.com/problems/linked-list-cycle-ii/description/) || remove the the loop
-3. Merge Two Sorted Lists [21. Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/description/)
-4. Remove Nth Node From End [19. Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/description/)
-5. **Design** [146. LRU Cache](https://leetcode.com/problems/lru-cache/description/)
-6. Swap nodes in k-groups
+2. **Cycles:** [LC141 Detect](https://leetcode.com/problems/linked-list-cycle/description/) (explain math) || [Find start](https://leetcode.com/problems/linked-list-cycle-ii/description/) || [remove the the loop](https://www.geeksforgeeks.org/problems/remove-loop-in-linked-list/1)
+3. [21. Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/description/)
+4. [19. Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/description/)
+5. **Modify:** [25. Reverse Nodes in k-Group](https://leetcode.com/problems/reverse-nodes-in-k-group/description/) || [24. Swap Nodes in Pairs](https://leetcode.com/problems/swap-nodes-in-pairs/description/)
+6. **Design** [146. LRU Cache](https://leetcode.com/problems/lru-cache/description/)
+
 
 ---
 
