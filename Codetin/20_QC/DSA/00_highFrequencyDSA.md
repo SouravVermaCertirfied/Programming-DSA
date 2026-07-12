@@ -70,23 +70,23 @@ You should be able to solve these in 10–20 min each:
 
 ## 5. Linked List (Common in screening rounds)
 
-1. [206. Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/description/) ( recursive and interative approach) 
-2. **Cycles:** [LC141 Detect](https://leetcode.com/problems/linked-list-cycle/description/) (explain math) || [Find start](https://leetcode.com/problems/linked-list-cycle-ii/description/) || [remove the the loop](https://www.geeksforgeeks.org/problems/remove-loop-in-linked-list/1)
+1. [206. Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/description/) ( recursive & interative ) || [92. Reverse Linked List II](https://leetcode.com/problems/reverse-linked-list-ii/description/)
+2. **`Cycles`:** [LC141 Detect](https://leetcode.com/problems/linked-list-cycle/description/) (explain math) || [Find start](https://leetcode.com/problems/linked-list-cycle-ii/description/) || [remove the the loop](https://www.geeksforgeeks.org/problems/remove-loop-in-linked-list/1)
 3. [21. Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/description/)
 4. [19. Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/description/)
-5. **Modify:** [25. Reverse Nodes in k-Group](https://leetcode.com/problems/reverse-nodes-in-k-group/description/) || [24. Swap Nodes in Pairs](https://leetcode.com/problems/swap-nodes-in-pairs/description/)
-6. **Design** [146. LRU Cache](https://leetcode.com/problems/lru-cache/description/)
+5. **`Modify`:** [25. Reverse Nodes in k-Group](https://leetcode.com/problems/reverse-nodes-in-k-group/description/) || [24. Swap Nodes in Pairs](https://leetcode.com/problems/swap-nodes-in-pairs/description/)
+6. **`Design`** [146. LRU Cache](https://leetcode.com/problems/lru-cache/description/)
 
 
 ---
 
 ## 6. Binary Search (must be sharp)
 
-* Binary Search (basic + edge cases) [704. Binary Search](https://leetcode.com/problems/binary-search/description/)
-* Search in Rotated Sorted Array [33. Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/description/)
-* Find First and Last Position of Element [34. Find First and Last Position of Element in Sorted Array](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/description/)
-* Peak Element [162. Find Peak Element](https://leetcode.com/problems/find-peak-element/description/)
-* Median of Two Sorted Arrays (advanced, optional but strong signal) [4. Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays/description/)
+1. [704. Binary Search](https://leetcode.com/problems/binary-search/description/)
+2. [33. Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/description/)
+3. [34. Find First and Last Position of Element in Sorted Array](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/description/)
+* [162. Find Peak Element](https://leetcode.com/problems/find-peak-element/description/)
+*  [4. Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays/description/) (advanced, optional but strong signal)
 
 ---
 
