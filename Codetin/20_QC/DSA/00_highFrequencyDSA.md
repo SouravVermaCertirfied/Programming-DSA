@@ -11,14 +11,13 @@ If you truly want “cold start ready”, you should be able to:
 
 You should be able to solve these in 10–20 min each:
 
-* Two Sum (all variants: unsorted, sorted, return indices) [1](https://leetcode.com/problems/two-sum/description/)
-* Three Sum (and avoid duplicates) [15. 3Sum](https://leetcode.com/problems/3sum/description/)
-* Container With Most Water [11. Container With Most Water](https://leetcode.com/problems/container-with-most-water/description/)
-* Trapping Rain Water [42. Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water/description/)
+1. [1 Two Sum](https://leetcode.com/problems/two-sum/description/) (all variants: unsorted, sorted, return indices)
+* [15. 3Sum](https://leetcode.com/problems/3sum/description/) (and avoid duplicates) || [18. 4Sum](https://leetcode.com/problems/4sum/description/)
+* [11. Container With Most Water](https://leetcode.com/problems/container-with-most-water/description/) || [42. Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water/description/)
 * Move Zeroes [283. Move Zeroes](https://leetcode.com/problems/move-zeroes/description/)
 * Remove Duplicates from Sorted Array [26. Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/description/)
 * Sort Colors (Dutch National Flag) [75. Sort Colors](https://leetcode.com/problems/sort-colors/description/)
-* Maximum Subarray (Kadane’s Algorithm) [53. Maximum Subarray](https://leetcode.com/problems/maximum-subarray/description/)
+8. Maximum Subarray (Kadane’s Algorithm) [53. Maximum Subarray](https://leetcode.com/problems/maximum-subarray/description/)
 
 **What they test:** pointer logic, greedy thinking, edge cases.
 
@@ -56,7 +55,7 @@ You should be able to solve these in 10–20 min each:
 
 ---
 
-## 4. Stack / Monotonic Stack (VERY IMPORTANT for Qualcomm-style interviews)
+## 4. Stack / Monotonic Stack (VERY IMPORTANT for QC-style interviews)
 
 * Valid Parentheses [20. Valid Parentheses](https://leetcode.com/problems/valid-parentheses/description/)
 * Next Greater Element I & II [496. Next Greater Element I](https://leetcode.com/problems/next-greater-element-i/description/) / [503. Next Greater Element II](https://leetcode.com/problems/next-greater-element-ii/description/)
@@ -74,8 +73,8 @@ You should be able to solve these in 10–20 min each:
 2. **`Cycles`:** [LC141 Detect](https://leetcode.com/problems/linked-list-cycle/description/) (explain math) || [Find start](https://leetcode.com/problems/linked-list-cycle-ii/description/) || [remove the the loop](https://www.geeksforgeeks.org/problems/remove-loop-in-linked-list/1)
 3. [21. Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/description/)
 4. [19. Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/description/)
-5. **`Modify`:** [25. Reverse Nodes in k-Group](https://leetcode.com/problems/reverse-nodes-in-k-group/description/) || [24. Swap Nodes in Pairs](https://leetcode.com/problems/swap-nodes-in-pairs/description/)
-6. **`Design`** [146. LRU Cache](https://leetcode.com/problems/lru-cache/description/)
+5. **`Modify`:** [25. Reverse Nodes in k-Group](https://leetcode.com/problems/reverse-nodes-in-k-group/description/) || [24. Swap Nodes in Pairs](https://leetcode.com/problems/swap-nodes-in-pairs/description/) || [61. Rotate List](https://leetcode.com/problems/rotate-list/description/)
+6. **`Design`** [146. LRU Cache](https://leetcode.com/problems/lru-cache/description/) || [460. LFU Cache](https://leetcode.com/problems/lfu-cache/description/)
 
 
 ---
@@ -94,8 +93,7 @@ You should be able to solve these in 10–20 min each:
 
 * Inorder / Preorder / Postorder traversal (recursive + iterative)
 * Level Order Traversal (BFS) [102. Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/description/)
-* Maximum Depth of Binary Tree [104. Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/description/)
-* Diameter of Binary Tree [543. Diameter of Binary Tree](https://leetcode.com/problems/diameter-of-binary-tree/description/)
+* [104. Maximum **Depth** of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/description/) | [543. **Diameter** of Binary Tree](https://leetcode.com/problems/diameter-of-binary-tree/description/)
 * Lowest Common Ancestor [236. Lowest Common Ancestor of a Binary Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/description/)
 * Validate BST [98. Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree/description/)
 
