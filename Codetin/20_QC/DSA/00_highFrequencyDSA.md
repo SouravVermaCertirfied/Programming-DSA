@@ -36,7 +36,7 @@ You should be able to solve these in 10–20 min each:
 * Longest Substring Without Repeating Characters [3. Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/description/)
 * Minimum Window Substring (important) [76. Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring/description/)
 * Longest Repeating Character Replacement [424. Longest Repeating Character Replacement](https://leetcode.com/problems/longest-repeating-character-replacement/description/)
-* Subarray Sum Equals K (prefix sum + hashmap) [560. Subarray Sum Equals K](https://leetcode.com/problems/subarray-sum-equals-k/description/)
+
 
 **Key idea:** you should immediately think “window + hashmap/prefix sum”.
 
@@ -44,9 +44,8 @@ You should be able to solve these in 10–20 min each:
 
 ## 3. Hashing / Prefix Sum
 
-* Two Sum (again, but optimized) [1. Two Sum](https://leetcode.com/problems/two-sum/description/)
-* Subarray Sum Equals K [560. Subarray Sum Equals K](https://leetcode.com/problems/subarray-sum-equals-k/description/)
-* Longest Consecutive Sequence [128. Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence/description/)
+* [560. Subarray Sum Equals K](https://leetcode.com/problems/subarray-sum-equals-k/description/)(prefix sum + hashmap)
+* [128. Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence/description/)
 * Group Anagrams [49. Group Anagrams](https://leetcode.com/problems/group-anagrams/description/)
 * Top K Frequent Elements [347. Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/description/)
 * Product of Array Except Self [238. Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/description/)
@@ -57,8 +56,8 @@ You should be able to solve these in 10–20 min each:
 
 ## 4. Stack / Monotonic Stack (VERY IMPORTANT for QC-style interviews)
 
-* Valid Parentheses [20. Valid Parentheses](https://leetcode.com/problems/valid-parentheses/description/)
-* Next Greater Element I & II [496. Next Greater Element I](https://leetcode.com/problems/next-greater-element-i/description/) / [503. Next Greater Element II](https://leetcode.com/problems/next-greater-element-ii/description/)
+* [20. Valid Parentheses](https://leetcode.com/problems/valid-parentheses/description/)
+* [496. Next Greater Element I](https://leetcode.com/problems/next-greater-element-i/description/) / [503. Next Greater Element II](https://leetcode.com/problems/next-greater-element-ii/description/)
 * Daily Temperatures [739. Daily Temperatures](https://leetcode.com/problems/daily-temperatures/description/)
 * Largest Rectangle in Histogram (HARD but critical) [84. Largest Rectangle in Histogram](https://leetcode.com/problems/largest-rectangle-in-histogram/description/)
 * Min Stack [155. Min Stack](https://leetcode.com/problems/min-stack/description/)
@@ -94,6 +93,7 @@ You should be able to solve these in 10–20 min each:
 * Inorder / Preorder / Postorder traversal (recursive + iterative)
 * Level Order Traversal (BFS) [102. Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/description/)
 * [104. Maximum **Depth** of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/description/) | [543. **Diameter** of Binary Tree](https://leetcode.com/problems/diameter-of-binary-tree/description/)
+* **`View`**: Left , right, top and bottom view
 * Lowest Common Ancestor [236. Lowest Common Ancestor of a Binary Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/description/)
 * Validate BST [98. Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree/description/)
 
@@ -113,12 +113,13 @@ You should be able to solve these in 10–20 min each:
 
 Don’t overdo DP—focus patterns:
 
+* [0/1 Knapsack (basic form)](https://www.geeksforgeeks.org/problems/0-1-knapsack-problem0945/1) || [322. Coin Change](https://leetcode.com/problems/coin-change/description/)
+* Edit Distance (optional stretch) [72. Edit Distance](https://leetcode.com/problems/edit-distance/description/)
+* Longest Increasing Subsequence [300. Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence/description/)
 * Climbing Stairs [70. Climbing Stairs](https://leetcode.com/problems/climbing-stairs/description/)
 * House Robber I & II [198. House Robber](https://leetcode.com/problems/house-robber/description/) / [213. House Robber II](https://leetcode.com/problems/house-robber-ii/description/)
-* Coin Change [322. Coin Change](https://leetcode.com/problems/coin-change/description/)
-* Longest Increasing Subsequence [300. Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence/description/)
-* 0/1 Knapsack (basic form)
-* Edit Distance (optional stretch) [72. Edit Distance](https://leetcode.com/problems/edit-distance/description/)
+
+
 
 ---
 

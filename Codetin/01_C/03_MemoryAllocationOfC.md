@@ -1,28 +1,31 @@
 # Memory allocation of C program
 
 There are 4 areas of memory for a c program.
-```c
 
-+----------------------------------------------------------+
-|                  Task Stack(s) (RAM)                     |  <-- Each RTOS task has its own stack
-|     (Local vars, return addresses, CPU registers)        |
-|                   [Grows downward]                       |
-+----------------------------------------------------------+
-|                     Heap (RAM)                           |  <-- Dynamic memory (malloc/free)
-|                   [Grows upward]                         |
-+----------------------------------------------------------+
-|            Unnitializd .bss Segment (RAM)                |  <-- Zero-initialized/uninitialized globals/statics
-+----------------------------------------------------------+
-|           Initialized .data Segment (RAM)                |  <-- Globals/statics with explicit init values
-+----------------------------------------------------------+
-|           Code/Text Segment (Flash/ROM)                  |  <-- Program instructions, ISRs (read-only)
-+----------------------------------------------------------+
-|        Memory-Mapped I/O (Peripheral Registers)          |  <-- Special memory addresses mapped to hardware
-+----------------------------------------------------------+
-|              RTOS Kernel Memory (RAM)                    |  <-- Task control blocks, semaphores, queues
-+----------------------------------------------------------+
-|            Optional Interrupt Stack (RAM)                |  <-- Dedicated interrupt stack (if used)
-+----------------------------------------------------------+
+```java
+
+High Memory Address
+       |    +----------------------------------------------------------+
+       |    |                  Task Stack(s) (RAM)                     |  <-- Each RTOS task has its own stack
+       |    |      (Local vars, return addresses, CPU registers)       |
+       |    |                    [Grows downward]                      |
+       |    +----------------------------------------------------------+
+       |    |                        Heap (RAM)                        |  <-- Dynamic memory (malloc/free)
+       |    |                      [Grows upward]                      |
+       |    +----------------------------------------------------------+
+       |    |              Uninitialized .bss Segment (RAM)            |  <-- Zero-initialized globals/statics
+       |    +----------------------------------------------------------+
+       |    |               Initialized .data Segment (RAM)            |  <-- Globals/statics with explicit init values
+       |    +----------------------------------------------------------+
+       |    |                Code/Text Segment (Flash/ROM)             |  <-- Program instructions, constants, ISRs
+       |    +----------------------------------------------------------+
+       |    |         Memory-Mapped I/O (Peripheral Registers)*        |  <-- Hardware-dependent address space
+       |    +----------------------------------------------------------+
+       |    |                 RTOS Kernel Memory (RAM)*                |  <-- Task control blocks, queues, OS structures
+       |    +----------------------------------------------------------+
+       |    |               Optional Interrupt Stack (RAM)*            |  <-- Main/MSP stack for ISRs on architectures like ARM Cortex-M
+       v    +----------------------------------------------------------+
+Low Memory Address
 
 ```
 <hr>

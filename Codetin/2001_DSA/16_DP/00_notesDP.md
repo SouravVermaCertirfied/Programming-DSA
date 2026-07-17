@@ -10,24 +10,40 @@ Solve each subproblem once and **store its result** to avoid recomputation.
 
 ### 🧠 Approaches
 1. **Memoization (Top-Down)** =  Recursive + Uses cache (DP array/map)
-
 2. **Tabulation (Bottom-Up)**  = Iterative + Builds solution from base cases
+---
+| Feature           | Memoization (Top-Down DP)                         | Tabulation (Bottom-Up DP)                          |
+| ----------------- | ------------------------------------------------- | -------------------------------------------------- |
+| Approach          | Uses recursion                                    | Uses iteration (loops)                             |
+| Direction         | Starts from the final problem and breaks down     | Starts from the smallest subproblems and builds up |
+| Storage           | Uses a DP array/table to store computed results   | Uses a DP array/table to store results             |
+| Calculation order | Only calculates required states                   | Calculates all states                              |
+| Recursion         | Required                                          | Not required                                       |
+| Stack memory      | Uses recursion stack                              | No recursion stack                                 |
+| Speed             | Usually slightly slower due to recursion overhead | Usually faster due to iterative approach           |
+| Code complexity   | Easier to write from recursive solutions          | Requires understanding the order of computation    |
+
+---
 
 ## Example Issustration
 Find Nth Fibonacci number using both the memoization and tabulation approch.
 
 ### 1. Memoization
 ```c
-int fibonacci(int n, vector<int>& dp) {
-    if (n <= 1)
+int helper(int n, vector<int> &dp){
+    if(dp[n]!=-1) return dp[n];
+    if(n==0 || n==1){ 
+        dp[n] = n;
         return n;
-
-    if (dp[n] != -1)
-        return dp[n];
-
-    return dp[n] = fibonacci(n - 1, dp) + fibonacci(n - 2, dp);
+    }
+    dp[n] = helper(n-2, dp) + helper(n-1, dp);
+    return dp[n];
 }
-
+int fib(int n) {
+    vector<int> dp(n+1, -1);
+    helper(n, dp);
+    return dp[n];
+}
 ```
 
 ### 2. Tabulation 
@@ -57,12 +73,14 @@ int fib(int n){
 
     if(n==1 || n==0)
         return n;
-    int a, b, c = 0;
-    for(int i=0; i<=n; i++){
-        c = a + b;
+    int a = 0;
+    int b = 1;
+    int sum = 0;
+    for(int i=2; i<=n; i++){
+        sum = a + b;
         a = b;
-        b = c;
+        b = sum;
     }
-    return c;
+    return sum;
 }
 ```
