@@ -29,7 +29,7 @@
 ## 2. `register`
 
 - This ***requests*** the compiler to assign a register to these variables.
-- It is a hind and not a command
+- It is a hint and not a command.
 - The request many not necessary be met.
 - <span style="color: #854754;">Address cannot be accessed using <strong>&</strong> operator.</span> Attempt to do this will lead to compilation error.
     ```c
