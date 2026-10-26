@@ -13,15 +13,16 @@ Also known as **Early Binding**, this occurs when the compiler selects the appro
 - **Operator Overloading:** Giving special meaning to standard operators (like `+` or `<<`) for user-defined types.
 - **Templates:** Generating specific code for different data types at compile time.
 
-**Example of Function Overloading:**
+## Function Overloading: 
+Depends on the function signature ( they are )
+    - no of parmeters
+    - data type of paramters
+    - order of the paramter 
 
-C++
+## **int fun(`const` int val)** cannot be overloaded with **int fun(int val)** ?
+- No, int `fun(const int val)` cannot be overloaded with `int fun(int val)` in C++.
+- Attempting to define both will result in a compilation error for a redefinition or ambiguous function.
 
-```c
-void print(int i) { cout << "Integer: " << i << endl; }
-void print(double f) { cout << "Float: " << f << endl; }
-// The compiler knows which 'print' to call based on the argument type.
-```
 
 
 ## 2. Runtime Polymorphism (Dynamic Binding)
