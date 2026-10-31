@@ -1,3 +1,6 @@
+#include "I2C_Display.h"
+
+#if(MODE == DISPLAY_ONE_NUMBER)
 #include <stdio.h>
 #include <string.h>
 #include "pico/stdlib.h"
@@ -5,28 +8,14 @@
 
 // --- I2C Screen Configuration (Dedicated Pins) ---
 #define I2C_SCREEN_PORT        i2c0
-#define I2C_SCREEN_PIN_SDA     8      // Physical Pin 11
-#define I2C_SCREEN_PIN_SCL     9      // Physical Pin 12
-#define I2C_SCREEN_OLED_ADDR   0x3C   // Standard OLED I2C Address
+#define I2C_SCREEN_PIN_SDA     8       // Physical Pin 11
+#define I2C_SCREEN_PIN_SCL     9       // Physical Pin 12
+#define I2C_SCREEN_OLED_ADDR   0x3C    // Standard OLED I2C Address
 
 // 128x32 Display dimensions (4 pages of 8 rows = 32 pixels high)
 #define OLED_WIDTH 128
 #define OLED_HEIGHT 32
 static uint8_t fb[OLED_HEIGHT / 8][OLED_WIDTH];
-
-// Tiny 5x7 font table for digit 9 (and others)
-static const uint8_t font5x7[10][5] = {
-    {0x3E, 0x51, 0x49, 0x45, 0x3E}, // 0
-    {0x00, 0x42, 0x7F, 0x40, 0x00}, // 1
-    {0x42, 0x61, 0x51, 0x49, 0x46}, // 2
-    {0x21, 0x41, 0x45, 0x4B, 0x31}, // 3
-    {0x18, 0x14, 0x12, 0x7F, 0x10}, // 4
-    {0x27, 0x45, 0x45, 0x45, 0x39}, // 5
-    {0x3C, 0x4A, 0x49, 0x49, 0x30}, // 6
-    {0x01, 0x71, 0x09, 0x05, 0x03}, // 7
-    {0x36, 0x49, 0x49, 0x49, 0x36}, // 8
-    {0x06, 0x49, 0x49, 0x29, 0x1E}  // 9
-};
 
 // Send a single command or data byte to the screen
 void i2c_screen_send_byte(uint8_t val, bool is_data) {
@@ -67,22 +56,61 @@ void i2c_screen_clear() {
 
 // Draw a character onto the frame buffer
 void i2c_screen_draw_char(int x, int page, char c) {
-    if (c >= '0' && c <= '9') {
-        int index = c - '0';
+    const uint8_t *glyph = NULL;
+
+    static const uint8_t font_s[5]     = {0x48, 0x54, 0x54, 0x54, 0x24}; // Lowercase s
+    static const uint8_t font_o[5]     = {0x38, 0x44, 0x44, 0x44, 0x38}; // Lowercase o
+    static const uint8_t font_u[5]     = {0x3C, 0x40, 0x40, 0x20, 0x7C}; // Lowercase u
+    static const uint8_t font_r[5]     = {0x7C, 0x08, 0x04, 0x04, 0x08}; // Lowercase r
+    static const uint8_t font_a[5]     = {0x20, 0x54, 0x54, 0x54, 0x78}; // Lowercase a
+    static const uint8_t font_v[5]     = {0x1C, 0x20, 0x40, 0x20, 0x1C}; // Lowercase v
+    static const uint8_t font_e[5]     = {0x38, 0x54, 0x54, 0x54, 0x18}; // Lowercase e
+    static const uint8_t font_m[5]     = {0x7C, 0x04, 0x08, 0x04, 0x7C}; // Lowercase m
+    static const uint8_t font_space[5] = {0x00, 0x00, 0x00, 0x00, 0x00};
+
+    switch (c) {
+        case 's': glyph = font_s; break;
+        case 'o': glyph = font_o; break;
+        case 'u': glyph = font_u; break;
+        case 'r': glyph = font_r; break;
+        case 'a': glyph = font_a; break;
+        case 'v': glyph = font_v; break;
+        case 'e': glyph = font_e; break;
+        case 'm': glyph = font_m; break;
+        case ' ': glyph = font_space; break;
+        default:  glyph = font_space; break;
+    }
+
+    if (glyph) {
         for (int i = 0; i < 5; i++) {
-            if (x + i < OLED_WIDTH && page < 4) {
-                fb[page][x + i] = font5x7[index][i];
+            if (x + i >= 0 && x + i < OLED_WIDTH && page >= 0 && page < 4) {
+                fb[page][x + i] = glyph[i];
             }
         }
     }
 }
 
+// Draw a full string onto the frame buffer
+void i2c_screen_draw_string(int x, int page, const char *str) {
+    int cursor_x = x;
+    while (*str) {
+        i2c_screen_draw_char(cursor_x, page, *str);
+        cursor_x += 6; // 5 pixels for char + 1 pixel gap
+        str++;
+    }
+}
+
 // Push the frame buffer to the OLED screen
 void i2c_screen_flush() {
-    i2c_screen_send_byte(0x21, false); i2c_screen_send_byte(0, false); i2c_screen_send_byte(OLED_WIDTH - 1, false);
-    i2c_screen_send_byte(0x22, false); i2c_screen_send_byte(0, false); i2c_screen_send_byte((OLED_HEIGHT / 8) - 1, false);
+    i2c_screen_send_byte(0x21, false); 
+    i2c_screen_send_byte(0, false); 
+    i2c_screen_send_byte(OLED_WIDTH - 1, false);
+    
+    i2c_screen_send_byte(0x22, false); 
+    i2c_screen_send_byte(0, false); 
+    i2c_screen_send_byte((OLED_HEIGHT / 8) - 1, false);
 
-    uint8_t packet[OLED_WIDTH * (OLED_HEIGHT / 8) + 1];
+    uint8_t packet[(OLED_WIDTH * (OLED_HEIGHT / 8)) + 1];
     packet[0] = 0x40;
     memcpy(&packet[1], fb, sizeof(fb));
     i2c_write_blocking(I2C_SCREEN_PORT, I2C_SCREEN_OLED_ADDR, packet, sizeof(packet), false);
@@ -101,12 +129,24 @@ int main() {
     sleep_ms(100);
     i2c_screen_init();
 
-    // Clear buffer, draw "9" roughly centered, and update display
-    i2c_screen_clear();
-    i2c_screen_draw_char(60, 1, '9'); 
-    i2c_screen_flush();
+    // "sourav verma" has 12 characters -> (12 * 6) - 1 = 71 pixels wide
+    const int text_width = 71;
+    const int max_x = OLED_WIDTH - text_width; // 128 - 71 = 57 pixels
+
+    int text_x = 10;
+    int text_page = 1;
+    int text_vx = 1;  // 1 pixel horizontal step for silky smooth flow
+    int text_vpage = 1;
+    int page_timer = 0;
 
     while (true) {
-        tight_loop_contents();
+        i2c_screen_clear();
+
+        // Draw "sourav verma" bouncing around
+        i2c_screen_draw_string(text_x, text_page, "sourav verma");
+
+        i2c_screen_flush();
+
     }
 }
+#endif

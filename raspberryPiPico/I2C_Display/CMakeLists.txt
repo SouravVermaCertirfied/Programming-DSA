@@ -35,7 +35,7 @@ pico_sdk_init()
 
 # Add executable. Default name is the project name, version 0.1
 
-add_executable(I2C_Display I2C_Display.c )
+add_executable(I2C_Display I2C_Display.c I2C_BlinkOnePixel.c )
 
 pico_set_program_name(I2C_Display "I2C_Display")
 pico_set_program_version(I2C_Display "0.1")

@@ -60,3 +60,6 @@ target_link_libraries(SPI_Screen_ST7735R_Simplest
 
 pico_add_extra_outputs(SPI_Screen_ST7735R_Simplest)
 
+# Enable USB output so it creates a virtual COM port
+pico_enable_stdio_usb(SPI_Screen_ST7735R_Simplest 1)
+pico_enable_stdio_uart(SPI_Screen_ST7735R_Simplest 0)

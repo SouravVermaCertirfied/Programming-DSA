@@ -1,0 +1,4 @@
+#define ONE_PIXEL_BLINK 1
+#define DISPLAY_ONE_NUMBER 2
+
+#define MODE ONE_PIXEL_BLINK
